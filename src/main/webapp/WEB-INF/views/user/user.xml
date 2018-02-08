@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" 
+"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+	<definition name="layout" template="/WEB-INF/views/userTemp/layout.jsp">
+		<put-attribute name="header" value="/WEB-INF/views/userTemp/header.jsp"/>
+		<put-attribute name="content" value=""/>
+		<put-attribute name="footer" value="/WEB-INF/views/userTemp/footer.jsp"/>
+	</definition>
+	
+	<!-- Content 만들기 -->
+	<definition name="*.users" extends="layout">
+		<put-attribute name="content" value="/WEB-INF/views/{1}.jsp"/>
+	</definition>
+	
+	<definition name="*/*.users" extends="layout">
+		<put-attribute name="content" value="/WEB-INF/views/{1}/{2}.jsp"/>
+	</definition>
+	
+	<definition name="*/*/*.users" extends="layout">
+		<put-attribute name="content" value="/WEB-INF/views/{1}/{2}/{3}.jsp"/>
+	</definition>
+	
+	<!-- Tiles 제외하고 오직 jsp 페이지만 나오도록 -->
+	<definition name="empty" template="/WEB-INF/views/userTemp/empty.jsp">
+		<put-attribute name="content" value=""/>
+	</definition>
+	
+	<definition name="*.empty" extends="empty">
+		<put-attribute name="content" value="/WEB-INF/views/{1}.jsp"/>
+	</definition>
+	
+	<definition name="*/*.empty" extends="empty">
+		<put-attribute name="content" value="/WEB-INF/views/{1}/{2}.jsp"/>
+	</definition>
+</tiles-definitions>

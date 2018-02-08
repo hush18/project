@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+.category_ej {
+	width: 18%;
+	border: 0px solid #9C9C9C;
+	font-size: 12px;
+	display: block;
+}
+
+.category_FAQ_ej {
+	width: 100%;
+	border: 1px solid #9C9C9C;
+	height: auto;
+}
+
+.category_FAQ_ej h2, .category_FAQ_ej h3, .category_counsel_ej h3 {
+	margin-left: 20px;
+}
+.category_FAQ_ej>ul>li>a{
+	color: #9c9c9c;
+}
+.category_FAQ_ej>ul>li>a:hover{
+	color: #5cb38b;
+	text-decoration: none;
+}
+.line-ej {
+	width: 80%;
+	border-bottom: 1px solid #9C9C9C;
+	margin-left: 18px;
+}
+
+.category_ej ul {
+	color: #9C9C9C;
+	padding-left: 20px;
+	list-style: none;
+}
+
+.category_ej li {
+	margin: 10px auto;
+}

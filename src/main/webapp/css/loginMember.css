@@ -22,7 +22,7 @@ body {
 }
 
 .loginline_mh{
-	width: 740px; height: 500px;
+	width: 740px; height: 490px;
 	margin: auto;
 	margin-top: 50px;
 	border: 1px solid #c9c9c9;
@@ -30,7 +30,7 @@ body {
 	box-shadow: 2px 2px 2px 2px #c0c0c0;
 }
 
-.login_mh{margin-left: 100px;}
+.login_mh{margin-left: 100px; margin-top: 45px;}
 
 .login_mh li{
 	width: 240px; height: 30px; color: #808080;

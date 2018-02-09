@@ -68,7 +68,7 @@
 		<div class="bookReco_sc">최근본상품이 없습니다.</div>
 	</div>
 	<button class="wishList_sc" onclick="javascript:location.href='wishList.do'">위시리스트 ></button>
-	<button class="buy_sc">구매내역 ></button>
+	<button class="buy_sc" onclick="javascript:location.href='buyList.do'">구매내역 ></button>
 </div>
 <a class="side-scrolltop"
 	style="cursor: pointer; display: none; position: fixed; right: 100px; bottom: 100px; z-index: 100"

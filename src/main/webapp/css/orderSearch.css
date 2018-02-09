@@ -285,15 +285,17 @@ body {
 	text-align: center;
 }
 
-.search_faqlist_header_ej div:nth-child(1) {
+.search_faqlist_header_ej > div:nth-child(1) {
+	line-height: unset;
 	width:152px;
 }
 
-.search_faqlist_header_ej div:nth-child(2) {
+.search_faqlist_header_ej > div:nth-child(2) {
+	line-height: unset;
 	width:147px;
 }
 
-.search_faqlist_header_ej div:nth-child(3) {
+.search_faqlist_header_ej > div:nth-child(3) {
 	width:49px;
 }
 
@@ -303,9 +305,7 @@ body {
 	text-align: center;
 }
 
-.search_list_con_hy div:nth-child(2){
-	text-align: left;
-}
+
 
 .search_list_con_hy {
 	overflow: hidden;
@@ -315,10 +315,13 @@ body {
 }
 .table_jm div:nth-child(1) {
 	width:170px;
+	line-height: 18px;
 }
 
 .table_jm div:nth-child(2) {
 	width:150px;
+	text-align: left;
+	line-height: 17px;
 }
 .table_jm div:nth-child(2) > a{
 	overflow: hidden;
@@ -344,7 +347,13 @@ body {
 	width:80px;
 }
 
+.search_faqlist_header_ej > div:nth-child(1) {
+	line-height: unset;
+}
 
+.search_faqlist_header_ej > div:nth-child(2) {
+	line-height: unset;
+}
 
 
 .search_list_size_hy{
@@ -611,10 +620,12 @@ body {
 
 .buy_faqlist_header_ej div:nth-child(1) {
 	width:152px;
+	line-height: unset;
 }
 
 .buy_faqlist_header_ej div:nth-child(2) {
 	width:237px;
+	line-height: unset;
 }
 
 .buy_faqlist_header_ej div:nth-child(3) {

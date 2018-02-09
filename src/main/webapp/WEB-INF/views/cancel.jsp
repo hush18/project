@@ -143,7 +143,6 @@
 		<div class="con_hy">
 			<div class="con_info_hy">
 				<div><h2 class="h2_hy">아이디님의 정보</h2></div>
-				<button class="btn-all">회원수정</button>
 				<div class="con_info1_hy">
 					<div class="info_head_hy">
 						<div>진행중 주문 건</div>

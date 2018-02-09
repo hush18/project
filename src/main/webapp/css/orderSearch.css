@@ -204,6 +204,7 @@ body {
 	border-radius: 3px;
 	outline: none;
 	border:0px;
+	height:20px;
 	margin-right: 1.5px;
 	margin-left: 1.5px;
 }
@@ -236,7 +237,6 @@ body {
 	color: #000;
 	line-height: 25px;
 	text-align: center;
-	margin-top: 5px;
 	overflow: hidden;
 	display: block;
 }
@@ -286,12 +286,10 @@ body {
 }
 
 .search_faqlist_header_ej > div:nth-child(1) {
-	line-height: unset;
 	width:152px;
 }
 
 .search_faqlist_header_ej > div:nth-child(2) {
-	line-height: unset;
 	width:147px;
 }
 
@@ -353,6 +351,7 @@ body {
 
 .search_faqlist_header_ej > div:nth-child(2) {
 	line-height: unset;
+	text-align: center;
 }
 
 
@@ -368,6 +367,7 @@ body {
 }
 .list_hy > .table_jm:last-child{
 	border-bottom: 0px;
+	margin-bottom: 0px;
 }
 .list_hy div{
 	margin-top: 5px;
@@ -460,7 +460,7 @@ body {
 	overflow: hidden;
 }
 .detail_list_con_hy:last-child{
-	border-bottom: 0px solid #9c9c9c;
+	border-bottom: 1px solid #9c9c9c;
 }
 .detail_list_size_hy{
 	width:100px;
@@ -655,7 +655,7 @@ body {
 	width:49px;
 }
 
-/*장바구니*/
+/*장바구니
 .cart_faqlist_header_ej {
 	margin-top: 5px;
 	border: 1px solid #9c9c9c;
@@ -704,7 +704,7 @@ body {
 
 .cart_list_size_hy{
 	width:100px;
-}
+}*/
 
 /* 결제창 */
 .payment_Information_yk{

@@ -181,6 +181,7 @@
 					</select>
 					
 					<span><input type="checkbox" class="checkAll_sc"/><label>전체선택</label></span>
+					<span><button>선택삭제</button></span>
 				</div>
 				<div class="cart_faqlist_header_ej">
 					<div>상품명</div>

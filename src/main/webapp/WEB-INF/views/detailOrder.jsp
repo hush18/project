@@ -111,7 +111,6 @@
 		<div class="con_hy">
 			<div class="con_info_hy">
 				<div><h2 class="h2_hy">아이디님의 정보</h2></div>
-				<button class="btn-all">회원수정</button>
 				<div class="con_info1_hy">
 					<div class="info_head_hy">
 						<div>진행중 주문 건</div>
@@ -133,11 +132,6 @@
 			</div>
 			<div>
 				<h2 class="h2_hy">상세 주문 내역</h2>	 
-				<div class="array_hy">
-					<div class="array_list_hy"><a href="">주문번호</a> |</div>
-					<div class="array_list_hy"><a href="">주문일자</a> |</div>
-					<div class="array_list_hy"><a href="">현재배송상태</a></div>
-				</div>
 				<div class="detail_faqlist_header_ej">
 					<div>상품명</div>
 					<div>수량</div>
@@ -174,11 +168,25 @@
 							<div class="detail_list_size_hy"><strong>97,340원</strong></div>
 							<div class="detail_list_size_hy"><button class="block_btn_hy">취소</button></div>
 						</div>
+						<div class="detail_list_con_hy">
+							<div><a href="">오라클 SQL과 PL/SQL</a></div>
+							<div>3권</div>
+							<div class="detail_list_size_hy">2018.01.24</div>
+							<div class="detail_list_size_hy">2018.01.25</div>
+							<div class="detail_list_size_hy"><strong>97,340원</strong></div>
+							<div class="detail_list_size_hy"><button class="block_btn_hy">취소</button></div>
+						</div>
+						<div class="detail_list_con_hy">
+							<div><a href="">오라클 SQL과 PL/SQL</a></div>
+							<div>3권</div>
+							<div class="detail_list_size_hy">2018.01.24</div>
+							<div class="detail_list_size_hy">2018.01.25</div>
+							<div class="detail_list_size_hy"><strong>97,340원</strong></div>
+							<div class="detail_list_size_hy"><button class="block_btn_hy">취소</button></div>
+						</div>
+						
 					</div>
 				</div>
-			</div>
-			<div class="page_count_hy">
-				<a href="">1</a><a href="">2</a><a href="">3</a><a href="">4</a><a href="">5</a><a href="">[다음]</a>
 			</div>
 			<div class="delivery_info_hy">
 				<h2 class="h2_hy">가격정보</h2>

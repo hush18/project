@@ -139,6 +139,7 @@ body {
 	border-radius: 3px;
 	outline: none;
 	border:0px;
+	height:20px;
 	margin-right: 1.5px;
 	margin-left: 1.5px;
 	margin-top:15%;
@@ -155,7 +156,18 @@ body {
 	margin-bottom: 10px;
 	text-align: right;
 	font-size: 12px;
-	
+}
+.downList_hy button{
+	background: #5cb38b;
+	color: #fff;
+	/* position: relative; */
+	cursor: pointer;
+	padding: 4px 0.5em;	
+	font-size: 12px;
+	border-radius: 3px;
+	outline: none;
+	border:0px;
+	height:20px;
 }
 .downList_hy input{
 	vertical-align: middle;
@@ -343,9 +355,11 @@ body {
 
 .main_order_hy {
 	text-align: center;
+	
 }
 .main_order_hy .btn-all{
 	float: none;
+	margin-top: 20px;
 	margin-left: 15px;
 	margin-right: 15px;
 }

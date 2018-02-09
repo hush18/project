@@ -37,7 +37,7 @@
 					<ul class="ul-iy">
 						<li><a href="orderSearch.do">주문/배송조회</a></li>
 						<li><a href="cancel.do">취소/반품/교환내역</a></li>
-						<li><a href="buyList.do">구매 히스토리</a></li>
+						<li><a href="buyList.do">구매내역</a></li>
 					</ul></li>
 				<li><a href="nearestList.do">관심리스트</a>
 					<ul class="ul-iy">

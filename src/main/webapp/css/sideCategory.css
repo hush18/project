@@ -32,7 +32,7 @@ body {
 	padding-bottom: 20px;
 }
 
-.title_mh{color: #3C7B5e; font-size: 1.17em; cursor: pointer;}
+.title_mh{color: #5cb38b; font-size: 1.17em; cursor: pointer;}
 .title_mh h3{
 	margin-left: 20px;
 	width: 110px;
@@ -63,7 +63,15 @@ body {
 .sub_mh p{
 	margin: 14px 0px 3px 25px ;
 	width: 100px; 
-	color: #5CB38B; font-size: 1.17em; font-weight: bold;
+	color: #3c7b5e; font-size: 1.17em; font-weight: bold;
+}
+
+.faq_sc{
+	cursor: pointer;
+}
+
+.consulting_sc{
+	cursor: pointer;
 }
 
 .orderManager_mh h3{margin-top: 0px;}
@@ -79,6 +87,7 @@ body {
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
+.category_time_mh h3, .category_time_mh h2 {margin: 0px;}
 
 .category_time_mh div:nth-child(2), .category_time_mh div:nth-child(3){
 	color: #9c9c9c; font-size: 12px;

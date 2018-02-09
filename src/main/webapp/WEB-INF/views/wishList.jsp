@@ -39,7 +39,7 @@
 	
 		<div class="path_sc">홈 > 관심리스트 > 위시리스트</div>
 		
-		<!-- 사이드메뉴 -->
+				<!-- 사이드메뉴 -->
 		<div class="side_mh">
 		<div class="category_mh">
 			<div>
@@ -52,9 +52,9 @@
 					</div>
 					<div class="sub_mh">
 						<ul>
-							<li><a href="">주문/배송 조회</a></li>
-							<li><a href="">취소/반품/교환 내역</a></li>
-							<li><a href="">구매히스토리</a></li>
+							<li><a href="orderSearch.do">주문/배송 조회</a></li>
+							<li><a href="cancel.do">취소/반품/교환 내역</a></li>
+							<li><a href="buyList.do">구매히스토리</a></li>
 						</ul>
 					</div>
 				</div>
@@ -68,8 +68,8 @@
 					</div>
 					<div class="sub_mh">
 						<ul>
-							<li><a href="">최근본 상품</a></li>
-							<li><a href="">위시리스트</a></li>
+							<li><a href="nearestList.do">최근본 상품</a></li>
+							<li><a href="wishList.do">위시리스트</a></li>
 						</ul>
 					</div>
 				</div>
@@ -82,21 +82,21 @@
 						<img src="images/up.png">
 					</div>
 					<div class="sub_mh">
-						<p>FAQ</p>
+						<p class="faq_sc">FAQ</p> 
 						<ul>
-							<li><a href="">회원</a></li>
-							<li><a href="">상품</a></li>
-							<li><a href="">입금/결제</a></li>
-							<li><a href="">취소/교환/환불</a></li>
-							<li><a href="">주문</a></li>
-							<li><a href="">배송</a></li>
-							<li><a href="">적립</a></li>
+							<li><a href="CustomerService_faq.do">회원</a></li>
+							<li><a href="CustomerService_faq.do">상품</a></li>
+							<li><a href="CustomerService_faq.do">입금/결제</a></li>
+							<li><a href="CustomerService_faq.do">취소/교환/환불</a></li>
+							<li><a href="CustomerService_faq.do">주문</a></li>
+							<li><a href="CustomerService_faq.do">배송</a></li>
+							<li><a href="CustomerService_faq.do">적립</a></li>
 						</ul>
 	
-						<p>1:1 상담</p>
+						<p class="consulting_sc">1:1 상담</p>
 						<ul>
-							<li><a href="">1:1 상담하기</a></li>
-							<li><a href="">1:1 상담내역</a></li>
+							<li><a href="CustomerService_consulting.do">1:1 상담하기</a></li>
+							<li><a href="CustomerService_consultingList.do">1:1 상담내역</a></li>
 						</ul>
 					</div>
 				</div>
@@ -111,24 +111,24 @@
 					<div class="sub_mh">
 	
 						<ul>
-							<li><a href="">회사 소개</a></li>
-							<li><a href="">매장 소개</a></li>
+							<li><a href="Introduction.do">회사 소개</a></li>
+							<li><a href="Map.do">매장 소개</a></li>
 						</ul>
 	
 					</div>
 				</div>
 			</div>
-	</div>
-
-	<div class="category_time_mh">
-		<div style="text-align: center;">
-			<h3>고객센터</h3>
-			<h2>0000-0000</h2>
 		</div>
-		<div style="text-align: center;">월~금 09:00 ~ 18:00</div>
-		<div style="text-align: center;">(토요일,일요일,공휴일 휴무)</div>
-	</div>
-	</div>
+
+		<div class="category_time_mh">
+			<div style="text-align: center;">
+				<h3>고객센터</h3>
+				<h2>0000-0000</h2>
+			</div>
+			<div style="text-align: center;">월~금 09:00 ~ 18:00</div>
+			<div style="text-align: center;">(토요일,일요일,공휴일 휴무)</div>
+		</div>
+		</div>
 		<div class="main_sc">
 			<div class="bar_sc">
 				<div class="bar_ea_sc">총 개수:0개</div>

@@ -1,43 +1,102 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>고객센터 회원</title>
-<link href="css/CustomerService_faq.css" rel="stylesheet" type="text/css" />
+<link href="css/CustomerService_faq.css" rel="stylesheet"
+	type="text/css" />
 <!-- <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script> -->
 <script src="js/CustomerService_faq.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/sideCategory.js"></script>
+<link type="text/css" rel="stylesheet" href="css/sideCategory.css" />
 </head>
 <body>
 	<div class="widthline">
 		<div class="boss_ej">
 			<div class="url_ej">경로~</div>
 			<div class="sub_boss_ej" style="display: flex;">
-				<div class="category_ej">
-					<div class="category_FAQ_ej">
-						<h2><a href="CustomerService_main.do">고객센터</a></h2>
-						<div class="line-ej"></div>
-						<h3 style="color: #3C7B5e;">자주 찾는 질문 FAQ</h3>
-						<ul>
-							<li><a href="CustomerService_faq.do">회원</a></li>
-							<li><a href="#">상품</a></li>
-							<li><a href="#">입금/결제</a></li>
-							<li><a href="#">취소/교환/환불</a></li>
-							<li><a href="#">주문</a></li>
-							<li><a href="#">배송</a></li>
-							<li><a href="#">적립</a></li>
-						</ul>
-
-						<h3 style="color: #3C7B5e;">1:1 상담</h3>
-						<ul>
-							<li><a href="CustomerService_consulting.do">1:1 상담하기</a></li>
-							<li><a href="CustomerService_consultingList.do">1:1 상담내역</a></li>
-						</ul>
-					</div>
-					
-					<div class="category_time_ej">
+				<!-- 사이드메뉴 -->
+				<div class="side_mh">
+					<div class="category_mh">
 						<div>
+							<!-- 주문관리 -->
+							<div class="orderManager_mh">
+								<div class="title_mh">
+									<h3>주문관리</h3>
+									<img src="images/down.png"> <img src="images/up.png">
+								</div>
+								<div class="sub_mh">
+									<ul>
+										<li><a href="orderSearch.do">주문/배송 조회</a></li>
+										<li><a href="cancel.do">취소/반품/교환 내역</a></li>
+										<li><a href="buyList.do">구매히스토리</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- 관심리스트 -->
+							<div class="wishList_mh">
+								<div class="title_mh">
+									<h3>관심리스트</h3>
+									<img src="images/down.png"> <img src="images/up.png">
+								</div>
+								<div class="sub_mh">
+									<ul>
+										<li><a href="nearestList.do">최근본 상품</a></li>
+										<li><a href="wishList.do">위시리스트</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- 고객센터 -->
+							<div class="client_mh">
+								<div class="title_mh">
+									<h3>고객센터</h3>
+									<img src="images/down.png"> <img src="images/up.png">
+								</div>
+								<div class="sub_mh">
+									<p class="faq_sc">FAQ</p>
+									<ul>
+										<li><a href="CustomerService_faq.do">회원</a></li>
+										<li><a href="CustomerService_faq.do">상품</a></li>
+										<li><a href="CustomerService_faq.do">입금/결제</a></li>
+										<li><a href="CustomerService_faq.do">취소/교환/환불</a></li>
+										<li><a href="CustomerService_faq.do">주문</a></li>
+										<li><a href="CustomerService_faq.do">배송</a></li>
+										<li><a href="CustomerService_faq.do">적립</a></li>
+									</ul>
+
+									<p class="consulting_sc">1:1 상담</p>
+									<ul>
+										<li><a href="CustomerService_consulting.do">1:1 상담하기</a></li>
+										<li><a href="CustomerService_consultingList.do">1:1
+												상담내역</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- 영업점 안내 -->
+							<div class="map_mh">
+								<div class="title_mh">
+									<h3>영업점 안내</h3>
+									<img src="images/down.png"> <img src="images/up.png">
+								</div>
+								<div class="sub_mh">
+
+									<ul>
+										<li><a href="Introduction.do">회사 소개</a></li>
+										<li><a href="Map.do">매장 소개</a></li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="category_time_mh">
+						<div style="text-align: center;">
 							<h3>고객센터</h3>
 							<h2>0000-0000</h2>
 						</div>
@@ -88,65 +147,55 @@
 							</div>
 							<div class="faqlist_ej">
 								<div class="listrow_ej">
-									<span class="listcell1_ej">번호</span>
-									<span class="listcell2_ej">유형</span>
-									<a href="#" class="listcell3_ej">제목</a>								
+									<span class="listcell1_ej">번호</span> <span class="listcell2_ej">유형</span>
+									<a href="#" class="listcell3_ej">제목</a>
 								</div>
 								<div style="display: none;">클릭시 내용</div>
 								<div class="listrow_ej">
-									<span class="listcell1_ej">번호</span>
-									<span class="listcell2_ej">유형</span>
-									<span class="listcell3_ej">제목</span>								
+									<span class="listcell1_ej">번호</span> <span class="listcell2_ej">유형</span>
+									<span class="listcell3_ej">제목</span>
 								</div>
 								<div style="display: none;">클릭시 내용</div>
 								<div class="listrow_ej">
-									<span class="listcell1_ej">번호</span>
-									<span class="listcell2_ej">유형</span>
-									<span class="listcell3_ej">제목</span>								
+									<span class="listcell1_ej">번호</span> <span class="listcell2_ej">유형</span>
+									<span class="listcell3_ej">제목</span>
 								</div>
 								<div style="display: none;">클릭시 내용</div>
 								<div class="listrow_ej">
-									<span class="listcell1_ej">번호</span>
-									<span class="listcell2_ej">유형</span>
-									<span class="listcell3_ej">제목</span>								
+									<span class="listcell1_ej">번호</span> <span class="listcell2_ej">유형</span>
+									<span class="listcell3_ej">제목</span>
 								</div>
 								<div style="display: none;">클릭시 내용</div>
 								<div class="listrow_ej">
-									<span class="listcell1_ej">번호</span>
-									<span class="listcell2_ej">유형</span>
-									<span class="listcell3_ej">제목</span>								
+									<span class="listcell1_ej">번호</span> <span class="listcell2_ej">유형</span>
+									<span class="listcell3_ej">제목</span>
 								</div>
 								<div style="display: none;">클릭시 내용</div>
 								<div class="listrow_ej">
-									<span class="listcell1_ej">번호</span>
-									<span class="listcell2_ej">유형</span>
-									<span class="listcell3_ej">제목</span>								
+									<span class="listcell1_ej">번호</span> <span class="listcell2_ej">유형</span>
+									<span class="listcell3_ej">제목</span>
 								</div>
 								<div style="display: none;">클릭시 내용</div>
 								<div class="listrow_ej">
-									<span class="listcell1_ej">번호</span>
-									<span class="listcell2_ej">유형</span>
-									<span class="listcell3_ej">제목</span>								
+									<span class="listcell1_ej">번호</span> <span class="listcell2_ej">유형</span>
+									<span class="listcell3_ej">제목</span>
 								</div>
 								<div style="display: none;">클릭시 내용</div>
 								<div class="listrow_ej">
-									<span class="listcell1_ej">번호</span>
-									<span class="listcell2_ej">유형</span>
-									<span class="listcell3_ej">제목</span>								
+									<span class="listcell1_ej">번호</span> <span class="listcell2_ej">유형</span>
+									<span class="listcell3_ej">제목</span>
 								</div>
 								<div style="display: none;">클릭시 내용</div>
 								<div class="listrow_ej">
-									<span class="listcell1_ej">번호</span>
-									<span class="listcell2_ej">유형</span>
-									<span class="listcell3_ej">제목</span>								
+									<span class="listcell1_ej">번호</span> <span class="listcell2_ej">유형</span>
+									<span class="listcell3_ej">제목</span>
 								</div>
 								<div style="display: none;">클릭시 내용</div>
 								<div class="listrow_ej">
-									<span class="listcell1_ej">번호</span>
-									<span class="listcell2_ej">유형</span>
-									<span class="listcell3_ej">제목</span>								
+									<span class="listcell1_ej">번호</span> <span class="listcell2_ej">유형</span>
+									<span class="listcell3_ej">제목</span>
 								</div>
-								
+
 							</div>
 							<div class="page_ej">< 페이지 ></div>
 						</div>

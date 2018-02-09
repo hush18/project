@@ -14,4 +14,10 @@ $(function(){
 		/*$(".category_mh .sub_mh").not($(this)).find("img[src='images/up.png']").hide();
 		$(".category_mh .sub_mh").not($(this)).find("img[src='images/down.png']").show();*/
 	});
+	$(".faq_sc").click(function(){
+		location.href="CustomerService_main.do";
+	});
+	$(".consulting_sc").click(function(){
+		location.href="CustomerService_consulting.do";
+	});
 });

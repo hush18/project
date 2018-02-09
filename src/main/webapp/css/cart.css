@@ -31,9 +31,59 @@ body {
 	color: #5CB38B;
 }
 
+/*사이드메뉴*/
+.side_h2_hy{
+	width: 80%;
+    margin-left: 18px;
+    border-bottom: 1px solid #9c9c9c;
+    font-weight: bold;
+}
+
+.content_side_hy{
+	border: 0px solid #9c9c9c;
+	width: 18%;	
+	float: left;
+}
+
+.content_sideline_hy{
+	width:100%;
+	border: 1px solid #9c9c9c;	
+}
+
+.content_sideline_hy a{
+	color:#9c9c9c;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+.content_sideline_hy a:hover{
+	color: #5cb38b;
+}
+
+.content_sideline_hy > ul{
+	margin: 14px 0px;
+    text-align: left;
+    list-style-type: none;
+    font-size: 1.17em;
+    padding-left: 18px;
+    line-height: 20px;	
+}
+
+.content_side_ul_hy  li{
+	list-style:none;
+	color: #3c7b52;
+	font-size: 1.17em;
+}
+
+
+
 /*메인 회원정보*/
 .con_hy{
-	width: 100%;	
+	display: block;
+	box-sizing:border-box;
+	border: solid blue 0px;
+	width: 80%;
+	float: right;
 }
 /*버튼통일*/
 .btn-all {
@@ -82,7 +132,7 @@ body {
 .block_btn_hy{
 	background: #5cb38b;
 	color: #fff;
-	position: relative;
+	/* position: relative; */
 	cursor: pointer;
 	padding: 4px 0.5em;	
 	font-size: 1.17em;
@@ -91,7 +141,7 @@ body {
 	border:0px;
 	margin-right: 1.5px;
 	margin-left: 1.5px;
-	margin-top:8%;
+	margin-top:15%;
 }
 
 .block_btn_hy:hover{
@@ -184,7 +234,7 @@ body {
 }
 
 .cart_faqlist_header_ej div:nth-child(1) {
-	width:498px;
+	width:400px;
 }
 
 .cart_faqlist_header_ej div:nth-child(2) {
@@ -199,7 +249,7 @@ body {
 }
 
 .cart_list_con_hy {
-	margin-bottom: 5px;
+	padding-bottom: 5px;
 	margin-top: 5px;
 	border-bottom: 1px solid #9c9c9c;
 	overflow: hidden;
@@ -211,7 +261,7 @@ body {
 }
 
 .bookName_hy{
-	width:487px;
+	width:390px;
 	overflow: hidden;
 }
 
@@ -220,8 +270,9 @@ body {
 	
 }
 
+
 .cart_list_size_hy{
-	width:150px;
+	width:110px;
 }
 
 .bookName_hy div{
@@ -250,7 +301,7 @@ body {
 	height: 57px;
 }
 .text_mid_hy{
-	line-height: 57px;
+	line-height: 53px;
 }
 .
 
@@ -306,8 +357,9 @@ body {
 	display: inline-block;
 }
 .quantity_div_hy{
+	display: inline-block;
 	margin: 0px;
-	margin-top: 1.5%;
+	margin-top: 1.7%;
 }
 .quantity_div_hy input{
 	background-color: white;
@@ -327,7 +379,7 @@ body {
 	font-size: 5px;
 	border: 1px solid #9c9c9c;
 	width: 10px;
-	height: 8px;
+	height: 8.73px;
 	padding: 0px;
 	line-height: 5px;
 	cursor: pointer;

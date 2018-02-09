@@ -83,7 +83,6 @@ body {
 	width: 80%;
 	float: right;
 }
-
 .con_hy :nth-child(2) h2{
 	margin-bottom: 5px;
 	margin-top: 30px;
@@ -198,9 +197,9 @@ body {
 .block_btn_hy{
 	background: #5cb38b;
 	color: #fff;
-	position: relative;
+	/* position: relative; */
 	cursor: pointer;
-	padding: 4px 0.5em;	
+	/* padding: 4px 0.5em; */	
 	font-size: 12px;
 	border-radius: 3px;
 	outline: none;
@@ -237,7 +236,7 @@ body {
 	color: #000;
 	line-height: 25px;
 	text-align: center;
-	margin-top: 20px;
+	margin-top: 5px;
 	overflow: hidden;
 	display: block;
 }
@@ -304,31 +303,66 @@ body {
 	text-align: center;
 }
 
+.search_list_con_hy div:nth-child(2){
+	text-align: left;
+}
+
 .search_list_con_hy {
-	margin-bottom: 5px;	
+	overflow: hidden;
+}
+.table_jm div{
+	font-size: 12px;
+}
+.table_jm div:nth-child(1) {
+	width:170px;
 }
 
-.search_list_con_hy div:nth-child(1) {
-	width:152px;
+.table_jm div:nth-child(2) {
+	width:150px;
+}
+.table_jm div:nth-child(2) > a{
+	overflow: hidden;
+	word-break: break-all;
+}
+.table_jm div:nth-child(3) {
+	width:35px;
+}
+.table_jm div:nth-child(4) {
+	width:100px;
+}
+.table_jm div:nth-child(5) {
+	width:100px;
+}
+.table_jm div:nth-child(6) {
+	width:80px;
+	
+}
+.table_jm div:nth-child(7) {
+	width:80px;
+}
+.table_jm div:nth-child(8) {
+	width:80px;
 }
 
-.search_list_con_hy div:nth-child(2) {
-	width:147px;
-}
 
-.search_list_con_hy div:nth-child(3) {
-	width:49px;
-}
+
+
 .search_list_size_hy{
-	width:90px;
+	width: 90px;
 }
 
 .list_hy{
 	width:100%;
 }
+.list_hy > .table_jm{
+	border-bottom: 1px solid #9c9c9c;
+}
+.list_hy > .table_jm:last-child{
+	border-bottom: 0px;
+}
 .list_hy div{
 	margin-top: 5px;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 }
 .list_hy a{
 	text-decoration: none;
@@ -394,6 +428,8 @@ body {
 	width:50px;
 }
 
+
+
 .detail_list_con_hy div:nth-child(1) {
 	width:348px;
 }
@@ -409,11 +445,14 @@ body {
 
 .detail_list_con_hy {
 	box-sizing:border-box;
-	border: 1px solid white;
 	width:100%;
-	margin-bottom: 5px;	
+	border-bottom: 1px solid #9c9c9c;
+	padding-bottom: 5px;
+	overflow: hidden;
 }
-
+.detail_list_con_hy:last-child{
+	border-bottom: 0px solid #9c9c9c;
+}
 .detail_list_size_hy{
 	width:100px;
 }
@@ -427,6 +466,7 @@ body {
 .delivery_con_hy {
 	width: 100%;
 	border: solid #9c9c9c 1px;
+	box-sizing: border-box;
 }
 
 .delivery_info1_hy {
@@ -452,6 +492,7 @@ body {
 	width:30%;
 	box-sizing: border-box;
 	float: left;
+	padding-left: 10px;
 }
 
 .delivery_con_hy > div:nth-child(4) > div:nth-child(2){
@@ -507,6 +548,7 @@ body {
 	box-sizing: border-box;
 	width:30%;
 	float: left;
+	padding-left: 10px;
 }
 
 .payment_info1_hy >div:nth-child(1) {
@@ -587,6 +629,7 @@ body {
 
 .buy_list_con_hy {
 	margin-bottom: 5px;	
+	overflow: hidden;
 }
 
 .buy_list_con_hy div:nth-child(1) {

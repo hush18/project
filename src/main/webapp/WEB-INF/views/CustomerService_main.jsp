@@ -31,7 +31,7 @@
 									<ul>
 										<li><a href="orderSearch.do">주문/배송 조회</a></li>
 										<li><a href="cancel.do">취소/반품/교환 내역</a></li>
-										<li><a href="buyList.do">구매히스토리</a></li>
+										<li><a href="buyList.do">구매내역</a></li>
 									</ul>
 								</div>
 							</div>
@@ -46,6 +46,7 @@
 									<ul>
 										<li><a href="nearestList.do">최근본 상품</a></li>
 										<li><a href="wishList.do">위시리스트</a></li>
+										<li><a href="buyList.do">장바구니</a></li>
 									</ul>
 								</div>
 							</div>

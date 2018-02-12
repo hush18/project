@@ -83,7 +83,6 @@ body {
 	width: 80%;
 	float: right;
 }
-
 .con_hy :nth-child(2) h2{
 	margin-bottom: 5px;
 	margin-top: 30px;
@@ -198,13 +197,14 @@ body {
 .block_btn_hy{
 	background: #5cb38b;
 	color: #fff;
-	position: relative;
+	/* position: relative; */
 	cursor: pointer;
-	padding: 4px 0.5em;	
+	/* padding: 4px 0.5em; */	
 	font-size: 12px;
 	border-radius: 3px;
 	outline: none;
 	border:0px;
+	height:20px;
 	margin-right: 1.5px;
 	margin-left: 1.5px;
 }
@@ -237,7 +237,6 @@ body {
 	color: #000;
 	line-height: 25px;
 	text-align: center;
-	margin-top: 20px;
 	overflow: hidden;
 	display: block;
 }
@@ -286,15 +285,15 @@ body {
 	text-align: center;
 }
 
-.search_faqlist_header_ej div:nth-child(1) {
+.search_faqlist_header_ej > div:nth-child(1) {
 	width:152px;
 }
 
-.search_faqlist_header_ej div:nth-child(2) {
+.search_faqlist_header_ej > div:nth-child(2) {
 	width:147px;
 }
 
-.search_faqlist_header_ej div:nth-child(3) {
+.search_faqlist_header_ej > div:nth-child(3) {
 	width:49px;
 }
 
@@ -304,31 +303,75 @@ body {
 	text-align: center;
 }
 
+
+
 .search_list_con_hy {
-	margin-bottom: 5px;	
+	overflow: hidden;
+}
+.table_jm div{
+	font-size: 12px;
+}
+.table_jm div:nth-child(1) {
+	width:170px;
+	line-height: 18px;
 }
 
-.search_list_con_hy div:nth-child(1) {
-	width:152px;
+.table_jm div:nth-child(2) {
+	width:150px;
+	text-align: left;
+	line-height: 17px;
+}
+.table_jm div:nth-child(2) > a{
+	overflow: hidden;
+	word-break: break-all;
+}
+.table_jm div:nth-child(3) {
+	width:35px;
+}
+.table_jm div:nth-child(4) {
+	width:100px;
+}
+.table_jm div:nth-child(5) {
+	width:100px;
+}
+.table_jm div:nth-child(6) {
+	width:80px;
+	
+}
+.table_jm div:nth-child(7) {
+	width:80px;
+}
+.table_jm div:nth-child(8) {
+	width:80px;
 }
 
-.search_list_con_hy div:nth-child(2) {
-	width:147px;
+.search_faqlist_header_ej > div:nth-child(1) {
+	line-height: unset;
 }
 
-.search_list_con_hy div:nth-child(3) {
-	width:49px;
+.search_faqlist_header_ej > div:nth-child(2) {
+	line-height: unset;
+	text-align: center;
 }
+
+
 .search_list_size_hy{
-	width:90px;
+	width: 90px;
 }
 
 .list_hy{
 	width:100%;
 }
+.list_hy > .table_jm{
+	border-bottom: 1px solid #9c9c9c;
+}
+.list_hy > .table_jm:last-child{
+	border-bottom: 0px;
+	margin-bottom: 0px;
+}
 .list_hy div{
 	margin-top: 5px;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 }
 .list_hy a{
 	text-decoration: none;
@@ -394,6 +437,8 @@ body {
 	width:50px;
 }
 
+
+
 .detail_list_con_hy div:nth-child(1) {
 	width:348px;
 }
@@ -409,11 +454,14 @@ body {
 
 .detail_list_con_hy {
 	box-sizing:border-box;
-	border: 1px solid white;
 	width:100%;
-	margin-bottom: 5px;	
+	border-bottom: 1px solid #9c9c9c;
+	padding-bottom: 5px;
+	overflow: hidden;
 }
-
+.detail_list_con_hy:last-child{
+	border-bottom: 1px solid #9c9c9c;
+}
 .detail_list_size_hy{
 	width:100px;
 }
@@ -427,6 +475,7 @@ body {
 .delivery_con_hy {
 	width: 100%;
 	border: solid #9c9c9c 1px;
+	box-sizing: border-box;
 }
 
 .delivery_info1_hy {
@@ -452,6 +501,7 @@ body {
 	width:30%;
 	box-sizing: border-box;
 	float: left;
+	padding-left: 10px;
 }
 
 .delivery_con_hy > div:nth-child(4) > div:nth-child(2){
@@ -507,6 +557,7 @@ body {
 	box-sizing: border-box;
 	width:30%;
 	float: left;
+	padding-left: 10px;
 }
 
 .payment_info1_hy >div:nth-child(1) {
@@ -569,10 +620,13 @@ body {
 
 .buy_faqlist_header_ej div:nth-child(1) {
 	width:152px;
+	line-height: unset;
 }
 
 .buy_faqlist_header_ej div:nth-child(2) {
 	width:237px;
+	line-height: unset;
+	text-align: center;
 }
 
 .buy_faqlist_header_ej div:nth-child(3) {
@@ -587,6 +641,7 @@ body {
 
 .buy_list_con_hy {
 	margin-bottom: 5px;	
+	overflow: hidden;
 }
 
 .buy_list_con_hy div:nth-child(1) {
@@ -601,7 +656,7 @@ body {
 	width:49px;
 }
 
-/*장바구니*/
+/*장바구니
 .cart_faqlist_header_ej {
 	margin-top: 5px;
 	border: 1px solid #9c9c9c;
@@ -650,7 +705,7 @@ body {
 
 .cart_list_size_hy{
 	width:100px;
-}
+}*/
 
 /* 결제창 */
 .payment_Information_yk{

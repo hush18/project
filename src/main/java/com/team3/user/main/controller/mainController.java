@@ -180,4 +180,9 @@ public class mainController {
 		return null;
 	}
 	
+	@RequestMapping(value="/payment.do", method=RequestMethod.GET)
+	public ModelAndView payment(HttpServletRequest request,HttpServletResponse response) {
+		
+		return new ModelAndView("payment.users");
+	}
 }

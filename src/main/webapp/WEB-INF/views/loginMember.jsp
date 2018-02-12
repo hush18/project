@@ -11,9 +11,9 @@
 <script type="text/javascript" src="js/loginMember.js"></script>
 </head>
 <body>
-<form action="">
 	<div class="widthline">
 		<div class="loginline_mh">
+			<form action="userMain.do" method=get onsubmit="return loginForm(this)">
 			<div>
 				<h2 class="h2-hr">로그인</h2>
 			</div>
@@ -76,8 +76,10 @@
 				</div>
 			</div>
 			</div>
+		</form>
 			
 			<!-- 비회원 조회 창 -->
+			<form action="userMain.do" method=get onsubmit="return inquiryForm(this)">
 			<div class="alt_login_mh">
 				<div class="input_alt_mh">
 					<div>
@@ -106,8 +108,8 @@
 			</div>
 			</div>
 			
+			</form>
 		</div>
 	</div>
-</form>
 </body>
 </html>

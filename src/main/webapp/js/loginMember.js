@@ -25,10 +25,14 @@ $(function(){
 		$(".input_alt_mh").parent().addClass("alt_login_mh");
 	});
 	
-	$(".input_on_mh").find("input").click(function(){
+	/*$(".input_on_mh").find("input").click(function(){
 		if($(this).val()=="아이디를 입력하세요." || $(this).val()== "아이디" || $(this).val()== "비밀번호"){
 			$(this).val("");
 		}
+	});*/
+	
+	$(".input_on_mh").find("input").focus(function(){
+		$(this).val("");
 	});
 	
 	$("input[name=password]").click(function(){
@@ -42,12 +46,26 @@ $(function(){
 		}
 	});
 	
-	$(".input_alt_mh").find("input").click(function(){
-		if($(this).val()=="이름" || $(this).val()== "이메일" || $(this).val()== "주문 시 입력한 비밀번호를 입력해주세요."){
-			$(this).val("");
-		}
+	$(".input_alt_mh").find("input").focus(function(){
+		$(this).val("");
 	});
 });
+
+/*유효성 검사*/
+function loginForm(obj){
+//	alert("OK");
+		if($("input[name=id]").val()=="아이디" || $("input[name=id]").val()=="아이디를 입력하세요."){
+			alert("아이디를 입력하세요.");
+			$("input[name=id]").focus();
+			return false;
+		}
+		
+		if($("input[name=password]").val()=="" || $("input[name=password]").val()=="비밀번호"){
+			alert("비밀번호를 입력하세요.");
+			$("input[name=password]").focus();
+			return false;
+		}
+	}
 
 var url="";
 function idFind(){

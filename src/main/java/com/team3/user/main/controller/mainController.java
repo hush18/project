@@ -3,14 +3,21 @@ package com.team3.user.main.controller;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.team3.user.service.ServiceInterface;
+
 
 @Controller
 public class mainController {
+	
+	@Autowired
+	private ServiceInterface service;
+	
 	@RequestMapping(value="/userMain.do", method=RequestMethod.GET)
 	public ModelAndView register(HttpServletRequest request,HttpServletResponse response) {
 		
@@ -159,4 +166,18 @@ public class mainController {
 		
 		return new ModelAndView("detailOrder.users");
 	}
+	
+	@RequestMapping(value="/eventPopup.do", method=RequestMethod.GET)
+	public ModelAndView popup(HttpServletRequest request,HttpServletResponse response) {
+		
+		return new ModelAndView("event_popup.empty");
+	}
+	
+	@RequestMapping(value="/newsfeed.do", method=RequestMethod.GET)
+	public ModelAndView newsfeed(HttpServletRequest request,HttpServletResponse response) {
+		service.newsfeedParsing(request, response);
+		
+		return null;
+	}
+	
 }

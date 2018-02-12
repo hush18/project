@@ -56,7 +56,7 @@
 					<div>
 						<a href="" class="find_id_mh" onclick="idFind()">아이디 찾기</a>|
 						<a href="" class="find_pwd_mh" onclick="pwdFind()">비밀번호 찾기</a>|
-						<a href="" class="join_mh" style="font-weight: bold;">회원가입</a>|
+						<a href="createAccount.do" class="join_mh" style="font-weight: bold;">회원가입</a>|
 						<a href="diap.do" class="find_diap_mh">휴면계정조회</a>
 					</div>
 				</div>
@@ -84,10 +84,12 @@
 				<div class="input_alt_mh">
 					<div>
 						<input type="text" name="name" value="이름" />
-						<input type="text" name="email" value="이메일" /> @
-						<input type="text" name="eAddress" />
+						<div>
+							<input type="text" name="email" value="이메일" /> @
+							<input type="text" name="eAddress" />
+						</div>
 						<input type="text" name="password" 
-						value="주문 시 입력한 비밀번호를 입력해주세요." />
+						value="주문 시 비밀번호를 입력해주세요." />
 					</div>
 				</div>
 				
@@ -104,7 +106,7 @@
 				</div>
 				
 			<div class="alt_join_mh">
-				<a href="" style="font-weight: bold;">회원가입</a>
+				<a href="createAccount.do" style="font-weight: bold;">회원가입</a>
 			</div>
 			</div>
 			

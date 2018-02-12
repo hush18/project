@@ -54,7 +54,7 @@ $(function(){
 /*유효성 검사*/
 function loginForm(obj){
 //	alert("OK");
-		if($("input[name=id]").val()=="아이디" || $("input[name=id]").val()=="아이디를 입력하세요."){
+		if($("input[name=id]").val()=="아이디" || $("input[name=id]").val()=="아이디를 입력하세요." || $("input[name=id]").val()=="" ){
 			alert("아이디를 입력하세요.");
 			$("input[name=id]").focus();
 			return false;
@@ -66,6 +66,32 @@ function loginForm(obj){
 			return false;
 		}
 	}
+
+function inquiryForm(obj){
+	if($("input[name=name]").val()=="이름" || $("input[name=name]").val()==""){
+		alert("이름를 입력하세요.");
+		$("input[name=name]").focus();
+		return false;
+	}
+	
+	if($("input[name=email]").val()=="이메일" || $("input[name=email]").val()==""){
+		alert("이메일을 입력하세요.");
+		$("input[name=email]").focus();
+		return false;
+	}
+	
+	if($("input[name=eAddress]").val()==""){
+		alert("이메일을 입력하세요.");
+		$("input[name=eAddress]").focus();
+		return false;
+	}
+	
+	if($("input[name=password]").val()=="주문 시 입력한 비밀번호를 입력해주세요." || $("input[name=password]").val()==""){
+		alert("비밀번호를 입력하세요.");
+		$("input[name=password]").focus();
+		return false;
+	}
+}
 
 var url="";
 function idFind(){

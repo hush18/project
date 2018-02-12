@@ -5,7 +5,8 @@
 }
 .book_list_jm > div{
 	border-bottom: 1px solid #9c9c9c;
-	margin-bottom: 5px;
+	margin-top: 15px;
+	padding-bottom: 5px;
 }
 .simply .book_list_jm > div{
 	border-bottom: 0px;
@@ -21,7 +22,7 @@
 
 .book_list_button_jm{
 	border-left: 1px solid #9c9c9c;
-	margin-bottom: 5px;
+	margin-bottom: 15px;
 	float: right;
 	width: 150px;
 	padding-left: 20px;

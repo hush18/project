@@ -5,11 +5,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
-<!-- <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script> -->
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 <link href="css/bookLayout.css" type="text/css" rel="stylesheet"/><!-- 제민(영역 스타일 및 사이드 카테고리) -->
 <link href="css/bookSearch.css" type="text/css" rel="stylesheet"/><!-- 은지(검색 스타일) -->
 <link href="css/bookList.css" type="text/css" rel="stylesheet"/><!-- 제민(책 리스트) -->
-<script type="text/javascript" src="js/bookScript.js"></script><!-- 스크립트(수량Up&Down) -->
 <script type="text/javascript">
 	$(function () {
 		$("#view_jm").change(function() {
@@ -30,6 +29,8 @@
 		}).click(function() {
 			$(location).attr("href", "bookInfo.do");
 		})
+		
+		
 		$("#checkAll").click(function() {
 			if($(this).prop("checked")){
 				$(".check").each(function() {
@@ -41,6 +42,7 @@
 				})
 			}
 		})
+		
 		$(".quantity_up_jm").click(function() {
 			var target = $(this).children("input").val();
 			var value = $("#quantity_value_jm_"+target).val();
@@ -160,7 +162,7 @@
 									</span>
 								</div>
 								<button class="btn-all btn_list_2_jm" value="">장바구니</button>
-								<button class="btn-all btn_list_2_jm" value="" onclick="javascript:location.href='/projectFir/payment.jsp'">즉시구매</button>
+								<button class="btn-all btn_list_2_jm" value="" onclick="javascript:location.href='payment.do'">즉시구매</button>
 								<button class="btn-all btn_list_2_jm" value="">위시리스트</button>
 							</div>
 						</div>

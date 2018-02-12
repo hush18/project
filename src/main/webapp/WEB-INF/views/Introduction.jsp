@@ -9,23 +9,86 @@
 <link rel="stylesheet" href="css/menu_yk.css">
 <link rel="stylesheet" href="css/map.css">
 <script type="text/javascript" src="js/Introduction.js"></script>
+<link rel="stylesheet" type="text/css" href="css/sideCategory.css">
+<script type="text/javascript" src="js/sideCategory.js"></script>
 </head>
 <body>
 	<div class="widthline_yk">
 		<div class="sub_boss_ej" style="display: flex;">
 			<div class="category_ej">
-				<div class="category_FAQ_ej">
-					<h2>산책 소개</h2>
-					<div class="line-ej"></div>
-					<h3 style="color: #3C7B5e;">산책 소개</h3>
-					<ul>
-						<li><a href="Introduction.do">회사 소개</a></li>
-						<li><a href="Map.do">매장 소개</a></li>
-					</ul>
-					<h3 style="color: #3C7B5e;">제휴/입점문의</h3>
-					<ul>
-						<li><a href="#">제휴사/입점사</a></li>
-					</ul>
+				<div class="category_mh">
+					<div>
+						<!-- 주문관리 -->
+						<div class="orderManager_mh">
+							<div class="title_mh">
+								<h3>주문관리</h3>
+								<img src="images/down.png"> <img src="images/up.png">
+							</div>
+							<div class="sub_mh">
+								<ul>
+									<li><a href="">주문/배송 조회</a></li>
+									<li><a href="">취소/반품/교환 내역</a></li>
+									<li><a href="">구매히스토리</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- 관심리스트 -->
+						<div class="wishList_mh">
+							<div class="title_mh">
+								<h3>관심리스트</h3>
+								<img src="images/down.png"> <img src="images/up.png">
+							</div>
+							<div class="sub_mh">
+								<ul>
+									<li><a href="">최근본 상품</a></li>
+									<li><a href="">위시리스트</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- 고객센터 -->
+						<div class="client_mh">
+							<div class="title_mh">
+								<h3>고객센터</h3>
+								<img src="images/down.png"> <img src="images/up.png">
+							</div>
+							<div class="sub_mh">
+								<p>FAQ</p>
+								<ul>
+									<li><a href="">회원</a></li>
+									<li><a href="">상품</a></li>
+									<li><a href="">입금/결제</a></li>
+									<li><a href="">취소/교환/환불</a></li>
+									<li><a href="">주문</a></li>
+									<li><a href="">배송</a></li>
+									<li><a href="">적립</a></li>
+								</ul>
+
+								<p>1:1 상담</p>
+								<ul>
+									<li><a href="">1:1 상담하기</a></li>
+									<li><a href="">1:1 상담내역</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- 영업점 안내 -->
+						<div class="map_mh">
+							<div class="title_mh">
+								<h3>영업점 안내</h3>
+								<img src="images/down.png"> <img src="images/up.png">
+							</div>
+							<div class="sub_mh">
+
+								<ul>
+									<li><a href="">회사 소개</a></li>
+									<li><a href="Introduction.do">매장 소개</a></li>
+								</ul>
+
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 			

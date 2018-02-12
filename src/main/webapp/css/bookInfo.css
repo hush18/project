@@ -63,6 +63,7 @@
 .info_menu_list_jm{
 	width: 400px;
 	overflow: hidden;
+	margin-top: 15px;
 }
 .info_menu_list_jm > div{
 	color: #5cb38b;
@@ -167,11 +168,15 @@
 	margin: 5px auto;
 	overflow: hidden;
 }
-.info_review_jm > div:nth-child(1) > *{
+.info_review_jm > div:nth-child(1){
+	width: auto;
+	margin-left: 80px;
+}
+.info_review_jm > div:nth-child(2) > *{
 	display: inline-block;
 	float: left;
 }
-.info_review_jm > div:nth-child(1) > textarea{
+.info_review_jm > div:nth-child(2) > textarea{
 	width: 590px;
 	height: 50px;
 }

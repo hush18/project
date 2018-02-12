@@ -1,12 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<c:set var="root" value="${pageContext.request.contextPath}"/>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
-<script src="http://code.jquery.com/jquery-latest.min.js"
-	type="text/javascript"></script>
 <link href="css/bookLayout.css" type="text/css" rel="stylesheet" />
 <!-- 제민(영역 스타일 및 사이드 카테고리) -->
 <link href="css/bookInfo.css" type="text/css" rel="stylesheet" />
@@ -15,7 +15,7 @@
 <!-- 스크립트(수량Up&Down) -->
 <style type="text/css">
 	.star_rating {font-size:0; letter-spacing:-4px;}
-.star_rating a {
+.star_rating a, .star_rating label {
     font-size:16px;
     letter-spacing:0;
     display:inline-block;
@@ -23,8 +23,9 @@
     color:#9c9c9c;
     text-decoration:none;
 }
-.star_rating a:first-child {margin-left:0;}
-.star_rating a.on {color:#ffc107;}
+.star_rating a:first-child , .star_rating label:first-child {margin-left:0;}
+.star_rating a.on, .star_rating label.on {color:#ffc107;}
+
 </style>
 <script type="text/javascript">
 	$(function () {
@@ -33,7 +34,41 @@
 		    $(this).addClass("on").prevAll("a").addClass("on");
 		    return false;
 		});
+		
+		$(".quantity_up_jm").click(function() {
+			var target = $(this).children("input").val();
+			var value = $("#quantity_value_jm_"+target).val();
+			$("#quantity_value_jm_"+target).val(Number(value)+1);
+		})
+		$(".quantity_down_jm").click(function() {
+			var target = $(this).children("input").val();
+			var value = $("#quantity_value_jm_"+target).val();
+			if(value!=1){
+				$("#quantity_value_jm_"+target).val(Number(value)-1);
+			}
+		})
 	})
+	
+	function cart(root) {
+		var bookNumber = $("input[name='bookNumber']").val();
+		var quantity = $("input[name='quantity']").val();
+		
+		location.href=root+"/cart.do?bookNumber="+bookNumber+"&quantity="+quantity;
+	}
+	
+	function payment(root) {
+		var bookNumber = $("input[name='bookNumber']").val();
+		var quantity = $("input[name='quantity']").val();
+		
+		location.href=root+"/payment.do?bookNumber="+bookNumber+"&quantity="+quantity;
+	}
+	
+	function wishList(root) {
+		var bookNumber = $("input[name='bookNumber']").val();
+		var quantity = $("input[name='quantity']").val();
+		
+		location.href=root+"/wishList.do?bookNumber="+bookNumber+"&quantity="+quantity;
+	}
 </script>
 </head>
 <body>
@@ -79,11 +114,11 @@
 								<div>리뷰평점</div>
 								<div>
 									<p class="star_rating">
-										<a href="#" class="on">★</a>
-										<a href="#" class="on">★</a>
-										<a href="#" class="on">★</a>
-										<a href="#" class="on">★</a>
-										<a href="#">★</a>
+										<label class="on">★</label>
+										<label class="on">★</label>
+										<label class="on">★</label>
+										<label class="on">★</label>
+										<label >★</label>
 									</p>
 								</div><label>(4.0)</label>
 							</li>
@@ -91,18 +126,18 @@
 					</div>
 					<div class="book_area_button_jm">
 						<div class="quantity_div_jm">
-							<label>수량</label> <input id="quantity_value_jm_1"
-								class="quantity_input_jm" type="text" size="1" value="1">
-							<span class="quantity_area_jm"> <span
-								class="quantity_up_jm">▲<input type="hidden" value="1" /></span>
-								<span class="quantity_down_jm">▼<input type="hidden"
-									value="1" /></span>
+							<label>수량</label> 
+							<input name="quantity" id="quantity_value_jm_1" class="quantity_input_jm" type="text" size="1" value="1">
+							<span class="quantity_area_jm">
+								<span class="quantity_up_jm">▲<input type="hidden" value="1" /></span>
+								<span class="quantity_down_jm">▼<input type="hidden" value="1" /></span>
 							</span>
 						</div>
 						<br>
-						<button class="btn-all btn_info" value="">장바구니</button>
-						<button class="btn-all btn_info" value="">즉시구매</button>
-						<button class="btn-all btn_info" value="">위시리스트</button>
+						<input type="hidden" name="bookNumber" value="9788932030067">
+						<button class="btn-all btn_info" value="" onclick="cart('${root}')">장바구니</button>
+						<button class="btn-all btn_info" value="" onclick="payment('${root}')">즉시구매</button>
+						<button class="btn-all btn_info" value="" onclick="wishList('${root}')">위시리스트</button>
 					</div>
 				</div>
 				<!-- 상품정보, 리뷰정보, 환불정보 -->
@@ -121,9 +156,21 @@
 					<div class="info_goods_jm">
 						<div class="info_contents_jm">
 							<div>목차</div>
-							1. 몰린 학교 2. 수상한 이웃집 3. 세탁소 사건 4. 우리 둘만의 약속이야 5. 베니의 누나 6. 다시 찾은
-							이름 7. 이건 모험이라고! 8. 엠마 아줌마의 트럭 9. 난생처음 히치하이킹 10. 다시 돌아온 엠마 아줌마 11.
-							잃어버렸던 소중한 것 12. 인디언의 노래 13. 길 위의 아이들 14. 두 개의 이름 15. 미시시피 강의 모험
+							1. 몰린 학교<br>
+							2. 수상한 이웃집<br>
+							3. 세탁소 사건<br>
+							4. 우리 둘만의 약속이야<br>
+							5. 베니의 누나<br>
+							6. 다시 찾은 이름<br>
+							7. 이건 모험이라고!<br>
+							8. 엠마 아줌마의 트럭<br>
+							9. 난생처음 히치하이킹<br>
+							10. 다시 돌아온 엠마 아줌마<br>
+							11. 잃어버렸던 소중한 것<br>
+							12. 인디언의 노래<br>
+							13. 길 위의 아이들<br>
+							14. 두 개의 이름<br>
+							15. 미시시피 강의 모험<br>
 						</div>
 						<div class="info_intro_jm">
 							<div>소개</div>
@@ -201,103 +248,42 @@
 						</div>
 					</div>
 					<div class="info_review_jm">
+						<div style="display: block;">
+							<label style="display: inline-block; margin-right: 40px;">아이디</label>
+							<p class="star_rating" style="display: inline-block;">
+								<a href="#" class="on">★</a>
+								<a href="#" class="on">★</a>
+								<a href="#" class="on">★</a>
+								<a href="#" class="on">★</a>
+								<a href="#" class="on">★</a>
+							</p>
+						</div>
 						<div>
 							<!-- 입력창 -->
 							<textarea rows="" cols=""></textarea>
 							<button class="btn-all re_btn" value="">등록</button>
 						</div>
 						<!-- for -->
-						<div id="" class="info_review_centent_table">
-							<div>
-								<div class="">아이디</div>
-								<div class="test">서로 잘 알지 못하던 두 남자아이가 우연찮게 미국 대륙을 횡단하는 험난한
-									길에 올라 만나는 세상은 친절하거나 희망차지만은 않다.</div>
+						<c:forEach begin="1" end="5">
+							<div id="" class="info_review_centent_table">
 								<div>
-									<p class="star_rating">
-										<a href="#" class="on">★</a>
-										<a href="#" class="on">★</a>
-										<a href="#" class="on">★</a>
-										<a href="#" class="on">★</a>
-										<a href="#" class="on">★</a>
-									</p>
+									<div class="">아이디</div>
+									<div class="test">서로 잘 알지 못하던 두 남자아이가 우연찮게 미국 대륙을 횡단하는 험난한
+										길에 올라 만나는 세상은 친절하거나 희망차지만은 않다.</div>
+									<div>
+										<p class="star_rating">
+											<label class="on">★</label>
+											<label class="on">★</label>
+											<label class="on">★</label>
+											<label class="on">★</label>
+											<label class="on">★</label>
+										</p>
+									</div>
+									<div>18-01-24</div>
+									<input type="hidden" value="false" name="check">
 								</div>
-								<div>18-01-24</div>
-								<input type="hidden" value="false" name="check">
 							</div>
-						</div>
-						<div id="" class="info_review_centent_table">
-							<div>
-								<div class="">아이디</div>
-								<div class="test">서로 잘 알지 못하던 두 남자아이가 우연찮게 미국 대륙을 횡단하는 험난한
-									길에 올라 만나는 세상은 친절하거나 희망차지만은 않다.</div>
-								<div>
-									<p class="star_rating">
-										<a href="#" class="on">★</a>
-										<a href="#">★</a>
-										<a href="#">★</a>
-										<a href="#">★</a>
-										<a href="#">★</a>
-									</p>
-								</div>
-								<div>18-01-24</div>
-								<input type="hidden" value="false" name="check">
-							</div>
-						</div>
-						<div id="" class="info_review_centent_table">
-							<div>
-								<div class="">아이디</div>
-								<div class="test">서로 잘 알지 못하던 두 남자아이가 우연찮게 미국 대륙을 횡단하는 험난한
-									길에 올라 만나는 세상은 친절하거나 희망차지만은 않다.</div>
-								<div>
-									<p class="star_rating">
-										<a href="#" class="on">★</a>
-										<a href="#" class="on">★</a>
-										<a href="#" class="on">★</a>
-										<a href="#" class="on">★</a>
-										<a href="#">★</a>
-									</p>
-								</div>
-								<div>18-01-24</div>
-								<input type="hidden" value="false" name="check">
-							</div>
-						</div>
-						<div id="" class="info_review_centent_table">
-							<div>
-								<div class="">아이디</div>
-								<div class="test">서로 잘 알지 못하던 두 남자아이가 우연찮게 미국 대륙을 횡단하는 험난한
-									길에 올라 만나는 세상은 친절하거나 희망차지만은 않다.</div>
-								<div>
-									<p class="star_rating">
-										<a href="#" class="on">★</a>
-										<a href="#" class="on">★</a>
-										<a href="#" class="on">★</a>
-										<a href="#" class="on">★</a>
-										<a href="#">★</a>
-									</p>
-								</div>
-								<div>18-01-24</div>
-								<input type="hidden" value="false" name="check">
-							</div>
-						</div>
-						<div id="" class="info_review_centent_table">
-							<div>
-								<div class="">아이디</div>
-								<div class="test">서로 잘 알지 못하던 두 남자아이가 우연찮게 미국 대륙을 횡단하는 험난한
-									길에 올라 만나는 세상은 친절하거나 희망차지만은 않다.</div>
-								<div>
-									<p class="star_rating">
-										<a href="#" class="on">★</a>
-										<a href="#" class="on">★</a>
-										<a href="#">★</a>
-										<a href="#">★</a>
-										<a href="#">★</a>
-									</p>
-								</div>
-								<div>18-01-24</div>
-								<input type="hidden" value="false" name="check">
-							</div>
-						</div>
-
+						</c:forEach>
 
 						<div class="page_area_jm">
 							<ul>

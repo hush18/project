@@ -6,10 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
-<!-- <script -->
-<!-- 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 <link rel="stylesheet" href="css/map.css">
-<link rel="stylesheet" href="css/menu_yk.css">
 <script type="text/javascript" src="js/map.js"></script>
 <script type="text/javascript"
 	src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9eb7abeb2fc9f320722ec7633170e3ef"></script>
@@ -24,7 +21,7 @@
 <body>
 	<div class="div_yk"></div>
 	<div class="widthline_yk">
-		<div class="path_sc">홈 &gt; 영업점 안내</div>
+		<div class="path_sc">홈 &gt; 영업점 안내 &gt; 매장 소개</div>
 		<!-- 사이드메뉴 -->
 		<div class=".sub_boss_yk" style="display: flex;">
 			<div class="category_ej">
@@ -38,9 +35,9 @@
 							</div>
 							<div class="sub_mh">
 								<ul>
-									<li><a href="">주문/배송 조회</a></li>
-									<li><a href="">취소/반품/교환 내역</a></li>
-									<li><a href="">구매히스토리</a></li>
+									<li><a href="orderSearch.do">주문/배송 조회</a></li>
+									<li><a href="cancel.do">취소/반품/교환 내역</a></li>
+									<li><a href="buyList.do">구매내역</a></li>
 								</ul>
 							</div>
 						</div>
@@ -53,8 +50,9 @@
 							</div>
 							<div class="sub_mh">
 								<ul>
-									<li><a href="">최근본 상품</a></li>
-									<li><a href="">위시리스트</a></li>
+									<li><a href="nearestList.do">최근본 상품</a></li>
+									<li><a href="wishList.do">위시리스트</a></li>
+									<li><a href="buyList.do">장바구니</a></li>
 								</ul>
 							</div>
 						</div>
@@ -66,21 +64,22 @@
 								<img src="images/down.png"> <img src="images/up.png">
 							</div>
 							<div class="sub_mh">
-								<p>FAQ</p>
+								<p class="faq_sc">FAQ</p>
 								<ul>
-									<li><a href="">회원</a></li>
-									<li><a href="">상품</a></li>
-									<li><a href="">입금/결제</a></li>
-									<li><a href="">취소/교환/환불</a></li>
-									<li><a href="">주문</a></li>
-									<li><a href="">배송</a></li>
-									<li><a href="">적립</a></li>
+									<li><a href="CustomerService_faq.do">회원</a></li>
+									<li><a href="CustomerService_faq.do">상품</a></li>
+									<li><a href="CustomerService_faq.do">입금/결제</a></li>
+									<li><a href="CustomerService_faq.do">취소/교환/환불</a></li>
+									<li><a href="CustomerService_faq.do">주문</a></li>
+									<li><a href="CustomerService_faq.do">배송</a></li>
+									<li><a href="CustomerService_faq.do">적립</a></li>
 								</ul>
 
-								<p>1:1 상담</p>
+								<p class="consulting_sc">1:1 상담</p>
 								<ul>
-									<li><a href="">1:1 상담하기</a></li>
-									<li><a href="">1:1 상담내역</a></li>
+									<li><a href="CustomerService_consulting.do">1:1 상담하기</a></li>
+									<li><a href="CustomerService_consultingList.do">1:1
+											상담내역</a></li>
 								</ul>
 							</div>
 						</div>
@@ -94,14 +93,15 @@
 							<div class="sub_mh">
 
 								<ul>
-									<li><a href="">회사 소개</a></li>
-									<li><a href="Introduction.do">매장 소개</a></li>
+									<li><a href="Introduction.do">회사 소개</a></li>
+									<li><a href="Map.do">매장 소개</a></li>
 								</ul>
 
 							</div>
 						</div>
 					</div>
 				</div>
+
 				<div class="category_time_mh">
 					<div style="text-align: center;">
 						<h3>고객센터</h3>
@@ -132,10 +132,9 @@
 						산책 부평점이 'Culture leader들을 위한 복합문화공간'이라는 컨셉으로 새롭게 문을 열었습니다. 쇼핑과 휴식의
 						경계를 과감히 없앤 공간에서 그 어떤 서점보다 만족스러운 편안함을 제공하겠습니다. 책의 촉감을, 커피의 향기를 오감으로
 						느껴보세요. 오픈 라운지에서 친구와 맛있는 책 수다를, 뮤직 라운지에서는 연인과 함께 음악을 들으며 사랑을, 키드존에서
-						내 아이와 함께 책을 읽으며 가족애를 다지는 것도 잊지 마세요. 산책에서 이 모든 것이 가능합니다.<br>
-						<br> 서점이 아닙니다. Intellectual Culture Space입니다. 과거의 서점은 더더욱
-						아닙니다. 미래지향적인 서점의 모습으로 앞서갈 것입니다. 잠실 지역 최고의 문화 명소가 되고자 고객님들과
-						소통하겠습니다.
+						내 아이와 함께 책을 읽으며 가족애를 다지는 것도 잊지 마세요. 산책에서 이 모든 것이 가능합니다.<br> <br>
+						서점이 아닙니다. Intellectual Culture Space입니다. 과거의 서점은 더더욱 아닙니다. 미래지향적인
+						서점의 모습으로 앞서갈 것입니다. 잠실 지역 최고의 문화 명소가 되고자 고객님들과 소통하겠습니다.
 					</div>
 					<div class="map_Explanation_img_yk">
 						<img src="images/img_findmap17_01.jpg"> <img
@@ -175,10 +174,7 @@
 								1007-1, 1100, 1700, 2000, 6900, 7007, 8001<br> 간선버스 : 301,
 								341, 360,362<br> 공항버스 : 6000, 6006, 6705, 6706A<br>
 							</div>
-							<br>
-							<br>
-							<br>
-							<br>
+							<br> <br> <br> <br>
 						</div>
 					</div>
 				</div>

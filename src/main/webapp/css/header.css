@@ -123,6 +123,8 @@ ul, li, a, p, button {
 float: left;
 }
 
+.logo-iy > img{cursor: pointer;}
+
 /* 검색창 */
 .search-form-iy {
 	position: relative;

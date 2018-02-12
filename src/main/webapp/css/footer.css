@@ -221,7 +221,7 @@ p.adam {
 
 #serviceWrap {
 	position: absolute;
-	left: 50%;
+	left: 52%;
 	top: 310px; /*요기가 스크롤배너 위치설정*/
 	margin-left: 510px;
 	z-index: 10;

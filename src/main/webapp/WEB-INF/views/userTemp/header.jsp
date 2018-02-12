@@ -37,7 +37,7 @@
 					<ul class="ul-iy">
 						<li><a href="orderSearch.do">주문/배송조회</a></li>
 						<li><a href="cancel.do">취소/반품/교환내역</a></li>
-						<li><a href="buyList.do">구매 히스토리</a></li>
+						<li><a href="buyList.do">구매내역</a></li>
 					</ul></li>
 				<li><a href="nearestList.do">관심리스트</a>
 					<ul class="ul-iy">
@@ -47,8 +47,8 @@
 				<li><a href="CustomerService_main.do">고객센터</a>
 					<ul class="ul-iy">
 						<li><a href="CustomerService_main.do">FAQ</a></li>
-						<li><a href="CustomerService_consulting.do">1:1문의</a></li>
-						<li><a href="CustomerService_consultingList.do">실시간 상담</a></li>
+						<li><a href="CustomerService_consulting.do">1:1상담하기</a></li>
+						<li><a href="CustomerService_consultingList.do">1:1상담내역</a></li>
 					</ul></li>
 				<li><a href="Map.do">영업점안내</a></li>
 				<li><a href="#">(관리자메뉴)</a>

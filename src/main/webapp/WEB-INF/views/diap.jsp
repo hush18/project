@@ -17,21 +17,33 @@
 			}
 		});
 		
-		$(".diap_text_mh").find("input").click(function(){
-			if($(this).val()=="아이디를 입력하세요." || $(this).val()== "아이디" || $(this).val()== "비밀번호"){
-				$(this).val("");
-			}
+		$(".diap_text_mh").find("input").focus(function(){
+			$(this).val("");
 		});
 		
 		$("input[name=password]").click(function(){
 			$(this).attr("type","password");
 		});
 	});
+	
+	function diapForm(obj){
+	//	alert("OK");
+		if($("input[name=id]").val()=="" || $("input[name=id]").val()=="아이디" || $("input[name=id]").val()=="아이디를 입력하세요."){
+			alert("아이디를 입력하세요.")
+			$("input[name=id]").focus();
+			return false;
+		}
+		
+		if($("input[name=password]").val()=="" || $("input[name=password]").val()=="비밀번호"){
+			alert("비밀번호를 입력하세요.")
+			$("input[name=password]").focus();
+			return false;
+		}
+	}
 </script>
 <script type="text/javascript" src="script/scrollBanner.js"></script>
 </head>
 <body>
-<form action="">
 	<div class="widthline">
 		<div>
 			<h2 class="h2-hr">휴면계정 복원 안내</h2>
@@ -45,7 +57,8 @@
 		</div>
 		
 		<!-- 휴면 회원 해지 -->
-		<div class="diap_main_mh">
+	<div class="diap_main_mh">
+		<form action="userMain.do" method=get onsubmit="return diapForm(this)">
 			<div>
 				<h2 class="h2-hr">휴면계정 복원 하기</h2>
 			</div>
@@ -59,6 +72,7 @@
 					<button type="submit" class="btn-all">해지하기</button>
 				</div>
 			</div>
+		</form>
 			
 			<div class="sub_mh">
 				<p>휴면계정의 <strong>아이디/비밀번호가 기억나지 않는 경우</strong></p>
@@ -69,15 +83,14 @@
 			<div class="input_button_mh">
 				<button class="btn-all" onclick="idFind()">아이디 찾기</button>
 				<button class="btn-all" onclick="pwdFind()">비밀번호 찾기</button>
-				<button class="btn-all">1:1문의하기</button>
+				<button class="btn-all" onclick="javascripct:location.href='CustomerService_consulting.do'">1:1상담하기</button>
 			</div>
 			
 			<!-- 하단 서브메뉴 -->
 			<div class="input_sub_mh">
-				<a href="">회원가입</a>
+				<a href="createAccount.do">회원가입</a>
 			</div>
 		</div>
 	</div>
-</form>
 </body>
 </html>

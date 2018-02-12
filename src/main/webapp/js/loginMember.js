@@ -95,11 +95,11 @@ function inquiryForm(obj){
 
 var url="";
 function idFind(){
-	url+="findId.do";
+	url="findId.do";
 	window.open(url,"","width=716, height=600, location=1, top=100px, left=500px");
 }
 
 function pwdFind(){
-	url+="findPwd.do";
+	url="findPwd.do";
 	window.open(url,"","width=716, height=600, top=100px, left=500px");
 }

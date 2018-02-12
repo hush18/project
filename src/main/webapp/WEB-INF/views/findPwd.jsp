@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>비밀번호 찾기</title>
 <link href="css/findPwd.css" type="text/css" rel="stylesheet" />
-<!-- <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script> -->
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 	$(function(){
 		$(".input_email_mh > select").change(function(){
@@ -43,7 +43,7 @@
 					
 					<div class="input_sub_mh">
 						<div>
-							<input type="text" name="id"/>
+							<input type="text" name="id" style="margin-top: 13px;"/>
 						</div>
 						<div>
 							<input type="text" name="name" /> &nbsp;&nbsp;

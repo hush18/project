@@ -1,4 +1,4 @@
-package com.team3.user.main.controller;
+package com.team3.user.controller;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -13,7 +13,7 @@ import com.team3.user.service.ServiceInterface;
 
 
 @Controller
-public class mainController {
+public class userController {
 	
 	@Autowired
 	private ServiceInterface service;
@@ -184,5 +184,15 @@ public class mainController {
 	public ModelAndView payment(HttpServletRequest request,HttpServletResponse response) {
 		
 		return new ModelAndView("payment.users");
+	}
+	
+	@RequestMapping(value="/searchPwd.do", method=RequestMethod.GET)
+	public ModelAndView searchPwd(HttpServletRequest request,HttpServletResponse response) {
+		ModelAndView mav = new ModelAndView();
+		
+		mav.addObject("req", request);
+		service.searchPwd(mav);
+		
+		return mav;
 	}
 }

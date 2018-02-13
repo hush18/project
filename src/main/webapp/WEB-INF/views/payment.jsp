@@ -6,26 +6,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" href="css/payment.css">
-<link rel="stylesheet" href="css/btn.css">
 <link rel="stylesheet" href="css/btn_yk.css">
-<!-- <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script> -->
 <script type="text/javascript" src="js/payment.js"></script>
-<script type="text/javascript">
-	var className = "";
-	$(function() {
-		$("input:radio[name='payment']").change(function () {
-			className = $(this).val();
-			//alert(className);
-			$(".payment_Detail_input_yk>."+className).css("display", "table");
-			$(".payment_Detail_input_yk>:not(."+className+")").css("display", "none");
-		});
-	});
-</script>
 </head>
 <body>
 	<div class="widthline">
 		<h2 class="h2-hr">주문상품 확인</h2>
-
+		
 		<div class="order_item_Confirm_yk">
 			<div class="order_item_subject_yk">
 				<div style="width: 33%;">주문상품</div>
@@ -61,11 +48,11 @@
 				<div class="Shipping_input_yk">
 					<div>
 						&nbsp;&nbsp;&nbsp;&nbsp;
-						<input type="radio" name="Shipping" value="normal">
-						기본 배송지&nbsp;&nbsp;&nbsp;&nbsp;
-						<input type="radio" name="Shipping" value="enter_new">
+						<input type="radio" name="shipping_address" value="normal">
+						배송지 목록&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="radio" name="shipping_address" value="enter_new">
 						새로 입력&nbsp;&nbsp;&nbsp;&nbsp;
-						<input type="radio" name="Shipping" value="member_address_same">
+						<input type="radio" name="shipping_address" value="member_address_same">
 						회원정보와 동일&nbsp;&nbsp;&nbsp;&nbsp;
 					</div>
 					<div>
@@ -106,12 +93,14 @@
 					</div>
 					<div style="height: 100px;">
 						&nbsp;&nbsp;&nbsp;&nbsp;
-						<input type="text" name="zipcode">
+						<input type="text" name="zipcode" disabled="disabled">
+						<input type="hidden" name="zipcode">
 						&nbsp;&nbsp;
-						<button name="find_zipcode">주소찾기</button>
+						<button name="find_zipcode" style="display: none;">주소찾기</button>
 						<br>
 						&nbsp;&nbsp;&nbsp;&nbsp;
-						<input type="text" name="address_first">
+						<input type="text" name="address_first" disabled="disabled">
+						<input type="hidden" name="address_first">
 						&nbsp;&nbsp;
 						<input type="text" name="address_second">
 					</div>
@@ -160,7 +149,7 @@
 					<div>
 						<input type="text" name="point" value="1000" style="width: 80px; text-align: center;">
 						/
-						<span>누적 적립금</span>
+						<span>1000</span>
 					</div>
 					<img src="images/equal.png" class="icon_yk" style="margin-left: -265px; margin-top: 65px; z-index: 0">
 					<div style="border-right: 0px;">11,700원</div>
@@ -351,8 +340,8 @@
 				</div>
 			</div>
 			<div class="btn_div_yk">
-				<button class="btn_submit" style="width: 200px; height: 100px;" >결제하기</button>
-				<button class="btn_reset_yk" style="width: 200px; height: 100px;">취소</button>
+				<button class="btn_submit" style="width: 190px; height: 60px;" >결제하기</button>
+				<button class="btn_reset_yk" style="width: 190px; height: 60px;">취소</button>
 			</div>
 		</form>
 	</div>

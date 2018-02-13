@@ -186,6 +186,11 @@ public class userController {
 		return new ModelAndView("payment.users");
 	}
 	
+	@RequestMapping(value="/addressList.do", method=RequestMethod.GET)
+	public ModelAndView addressList(HttpServletRequest request,HttpServletResponse response) {
+		
+		return new ModelAndView("addressList.empty");
+	}
 	@RequestMapping(value="/searchPwd.do", method=RequestMethod.GET)
 	public ModelAndView searchPwd(HttpServletRequest request,HttpServletResponse response) {
 		ModelAndView mav = new ModelAndView();

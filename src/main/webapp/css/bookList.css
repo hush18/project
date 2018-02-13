@@ -50,8 +50,11 @@
 	overflow: hidden;
 }
 .detail_list_jm .book_list_content_jm > div{
-	margin-top: 30px;
+	margin-top: 20px;
 	margin-bottom: 0px;
+}
+.detail_list_jm .book_list_content_jm > div:nth-child(4){
+	display: inline-block;
 }
 .detail_list_jm .book_list_content_jm > div:first-child{
 	margin-top: 10px;

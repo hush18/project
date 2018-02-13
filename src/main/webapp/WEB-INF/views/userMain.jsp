@@ -7,9 +7,21 @@
 <link rel="stylesheet" href="css/iyStyle.css">
 
 <script type="text/javascript" src="js/newsfeedParsing.js"></script>
-<!-- jQuery -->
-</head>
 
+<!-- jQuery Cookie 라이브러리 (팝업창 관련)-->
+<script type="text/javascript" src="jquery_cookie/jquery.cookie.js"></script>
+<script type="text/javascript">
+	function openMsgBox() {
+		var eventCookie = $.cookie("event_condo");
+		// 쿠키가 없을 경우에만 (다시 보지 않기를 선택하지 않았을 경우.)
+		if (eventCookie != "no")
+			window.open('eventPopup.do', '_blank',
+					'width=400,height=300,top=50,left=150');
+	}
+
+	openMsgBox(); // 팝업창을 띄운다.
+</script>
+</head>
 <body onload="forNews()">
 	<div class="widthline">
 		<!-- Swiper -->

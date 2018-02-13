@@ -88,7 +88,7 @@
 							<input type="text" name="eAddress" />
 						</div>
 						<input type="text" name="password" 
-						value="주문 시 비밀번호를 입력해주세요." />
+						value="주문 시 입력한 비밀번호를 입력해주세요." />
 					</div>
 				</div>
 				

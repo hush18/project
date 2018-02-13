@@ -1,13 +1,13 @@
 var i = 0;
 
 function forNews() {
-	var myUrl = '/final/newsfeed.do';
+	var myUrl = 'newsfeed.do';
 
 	var myData = $.ajax({
 		url : myUrl,
 		dataType : "xml",
 		success : function(data) {
-			console.log('Success - you are a legend');
+			console.log('Success - newsfeed');
 			var item = data.getElementsByTagName("item");
 			var date = new Array();
 			

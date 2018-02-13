@@ -7,7 +7,7 @@ body {
 	color: #000;
 	margin: 0;
 	padding: 0;
-	overflow:scroll;
+	overflow: scroll;
 }
 
 .widthline {
@@ -43,6 +43,7 @@ ul, li, a, p, button {
 .logo-N-search-iy {
 	height: 100px;
 }
+
 .hr-iy {
 	margin: 0 0 30px 0;
 	border: 0;
@@ -58,6 +59,15 @@ ul, li, a, p, button {
 .header-content-iy {
 	display: inline-block;
 	height: fit-content;
+}
+
+.mainMenu-iy-fixed {
+	background-color: #fff;
+	width: 1000px;
+	line-height: 30px;
+	position: fixed;
+	top: 0px;
+	z-index: 999;
 }
 
 .leftMenu-iy, .rightMenu-iy, .topMenu-iy {
@@ -86,7 +96,7 @@ ul, li, a, p, button {
 .leftMenu-iy a:hover, .rightMenu-iy a:hover {
 	font-weight: bold;
 	color: #5cb38b;
-/* 	border-bottom: 3px solid #5cb38b; */
+	/* 	border-bottom: 3px solid #5cb38b; */
 }
 
 .leftMenu-iy ul ul, .rightMenu-iy ul ul {
@@ -119,11 +129,13 @@ ul, li, a, p, button {
 }
 
 .logo-iy {
-/* 	margin: 20px 0 20px 20px; */
-float: left;
+	/* 	margin: 20px 0 20px 20px; */
+	float: left;
 }
 
-.logo-iy > img{cursor: pointer;}
+.logo-iy>img {
+	cursor: pointer;
+}
 
 /* 검색창 */
 .search-form-iy {
@@ -276,12 +288,12 @@ float: left;
 .all-mainMenu-iy {
 	display: none;
 	position: absolute;
-    width: 958px;
-    height: auto;
-    border: 1px solid #3C7B5e;
-    background: #FFF;
-    z-index: 400;
-    padding: 10px 30px;
+	width: 958px;
+	height: auto;
+	border: 1px solid #3C7B5e;
+	background: #FFF;
+	z-index: 400;
+	padding: 10px 30px;
 }
 
 .all-mainMenu-iy div {

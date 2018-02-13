@@ -9,8 +9,8 @@
 	type="text/css" />
 </head>
 <body>
-	<div class="widthline">
-		<div class="boss_ej">
+	<div class="widthline_ej">
+		<div class="qboss_ej">
 			<div class="sub1_ej">
 				<span>주문번호 조회</span>
 			</div>
@@ -30,7 +30,7 @@
 				<div>입금금액</div>
 			</div>
 		</div>
-		<div class="page_ej">< 페이지 ></div>
+		<div class="page2_ej">< 페이지 ></div>
 	</div>
 </body>
 </html>

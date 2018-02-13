@@ -9,25 +9,24 @@ body {
 	padding: 0;
 }
 
-.widthline {
+.widthline_ej {
 	margin: 0 auto;
 	width: 500px;
 }
 
-.boss_ej{
-	height:500px;
+.qboss_ej{
 	background-color: #F8F8F8;
 	width:100%;
 	font-size: 12px;
 }
 
-.sub1_ej{
+.qsub1_ej{
 	height: 40px;
 	margin-bottom: 10px;
 	background-color: #5cb38b;
 }
 
-.sub1_ej span{
+.qsub1_ej span{
 	color: #fff;
 	line-height: 40px;
 	font-size: 1.17em;
@@ -35,12 +34,12 @@ body {
 	margin-left: 10px;
 }
 
-.sub2_ej{
+.qsub2_ej{
 	color: #5cb38b;
 	padding-left: 22px;
 }
 
-.sub3_ej{
+.qsub3_ej{
 	border: 0px solid #9c9c9c;
 	height: 50px;
 	margin-bottom: 10px;
@@ -49,7 +48,7 @@ body {
 	margin-top: 10px;
 }
 
-.sub4_ej {
+.qsub4_ej {
 	margin-top: 10px;
 	margin-left: 22px;
 	border: 1px solid #9c9c9c;
@@ -61,37 +60,37 @@ body {
 	line-height: 25px;
 }
 
-.sub4_ej div {
+.qsub4_ej div {
 	float:left;
 	text-align: center;
 }
 
-.sub4_ej div:nth-child(1) {
+.qsub4_ej div:nth-child(1) {
 	background-image: url("../images/CustomerService/minus5.png");
 	background-repeat: no-repeat;
 	background-position: 158px 4px;
 	width: 38%;
 }
 
-.sub4_ej div:nth-child(2) {
+.qsub4_ej div:nth-child(2) {
 	width: 20%;
 }
 
-.sub4_ej div:nth-child(3) {
+.qsub4_ej div:nth-child(3) {
 	background-image: url("../images/CustomerService/minus5.png");
 	background-repeat: no-repeat;
 	background-position: 1px 4px;
 	width: 25%;
 }
 
-.sub4_ej div:nth-child(4) {
+.qsub4_ej div:nth-child(4) {
 	background-image: url("../images/CustomerService/minus5.png");
 	background-repeat: no-repeat;
 	background-position: 1px 4px;
 	width: 17%;
 }
 
-.page_ej {
+.page2_ej {
 	margin-top: 10px;
 	background-color: #F8F8F8;
 	font-size: 12px;
@@ -102,12 +101,12 @@ body {
 	text-align: center;
 }
 
-.search_sub_ej {
+.qsearch_sub_ej {
 	float: left;
 	margin: 13px 0 0 50px;
 }
 
-.search_sub_ej input {
+.qsearch_sub_ej input {
     padding: 5px;
     color: #000;
     outline-color: #5CB38B;

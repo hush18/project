@@ -9,13 +9,12 @@ body {
 	padding: 0;
 }
 
-.widthline {
+.widthline_ej {
 	margin: 0 auto;
 	width: 500px;
 }
 
-.boss_ej{
-	height:500px;
+.qboss_ej{
 	background-color: #F8F8F8;
 	width:100%;
 	font-size: 12px;
@@ -113,7 +112,7 @@ body {
 	width: 17%;
 }
 
-.page_ej {
+.page2_ej {
 	margin-top: 10px;
 	background-color: #F8F8F8;
 	font-size: 12px;

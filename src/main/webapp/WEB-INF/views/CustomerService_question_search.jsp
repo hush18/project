@@ -9,27 +9,28 @@
 	type="text/css" />
 </head>
 <body>
-<div class="widthline">
-	<div class="boss_ej">
-		<div class="sub1_ej">
+<div class="widthline_ej">
+	<div class="qboss_ej">
+		<div class="qsub1_ej">
 			<span>문의상품 조회</span>
 		</div>
-		<div class="sub2_ej">▶검색하신 상품명이 포함된 모든 상품이 조회됩니다.</div>
-		<div class="sub3_ej">
-			<div class="search_sub_ej">
+		<div class="qsub2_ej">▶검색하신 상품명이 포함된 모든 상품이 조회됩니다.</div>
+		<div class="qsub3_ej">
+			<div class="qsearch_sub_ej">
 				<input type="text" name="search" size="30" /> <a href="#"
 					class="btn-all btn_ej">검색</a>
 			</div>
 		</div>
-		<div class="sub2_ej">▶상품내역</div>
-		<div class="sub4_ej">
+		<div class="qsub2_ej">▶상품내역</div>
+		<div class="qsub4_ej">
 			<div>제목</div>
 			<div>저자</div>
 			<div>발행일</div>
 			<div>가격</div>
 		</div>
+		<div>내용~</div>
 	</div>
-	<div class="page_ej">< 페이지 ></div>
+	<div class="page2_ej">< 페이지 ></div>
 </div>	
 </body>
 </html>

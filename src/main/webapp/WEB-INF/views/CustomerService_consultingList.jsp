@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>	
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -8,14 +9,14 @@
 <link href="css/CustomerService_consultingList.css" rel="stylesheet"
 	type="text/css" />
 <!-- <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script> -->
-<script src="js/CustomerService_consulting.js" type="text/javascript"></script>
+<script src="js/CustomerService.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/sideCategory.js"></script>
 <link type="text/css" rel="stylesheet" href="css/sideCategory.css" />
 </head>
 <body>
 	<div class="widthline">
 		<div class="boss_ej">
-			<div class="url_ej">경로~</div>
+			<div class="url_ej">홈 > 고객센터 > 1:1 상담내역</div>
 			<div class="sub_boss_ej" style="display: flex;">
 				<!-- 사이드메뉴 -->
 				<div class="side_mh">
@@ -144,12 +145,21 @@
 							</div>
 						</div>
 						<div class="sub4_ej">
-							<div>주문일자</div>
-							<div>주문번호</div>
-							<div>주문상품</div>
-							<div>입금금액</div>
+							<div>작성일</div>
+							<div>상담구분</div>
+							<div>상담명</div>
+							<div>답변유무</div>
 						</div>
-						<div class="list_content_ej">내용</div>
+						<c:forEach var="i" begin="1" end="10">
+							<div class="list_ej">
+								<div class="listrow_ej number${i}_ej">
+									<span class="listcell1_ej">2018-02-13</span>
+									<span class="listcell2_ej">회원&nbsp;>&nbsp;회원가입</span>
+									<span class="listcell3_ej">회원가입은 어떻게 하나요?</span>
+									<span class="listcell4_ej">O</span>
+								</div>
+							</div>
+						</c:forEach>
 						<div class="page_ej">< 페이지 ></div>
 					</div>
 				</div>

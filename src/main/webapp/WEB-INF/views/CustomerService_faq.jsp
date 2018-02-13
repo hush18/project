@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -8,14 +9,14 @@
 <link href="css/CustomerService_faq.css" rel="stylesheet"
 	type="text/css" />
 <!-- <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script> -->
-<script src="js/CustomerService_faq.js" type="text/javascript"></script>
+<script src="js/CustomerService.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/sideCategory.js"></script>
 <link type="text/css" rel="stylesheet" href="css/sideCategory.css" />
 </head>
 <body>
 	<div class="widthline">
 		<div class="boss_ej">
-			<div class="url_ej">경로~</div>
+			<div class="url_ej">홈 > FAQ ></div>
 			<div class="sub_boss_ej" style="display: flex;">
 				<!-- 사이드메뉴 -->
 				<div class="side_mh">
@@ -146,58 +147,15 @@
 								<div>질문유형</div>
 								<div>제목</div>
 							</div>
-							<div class="faqlist_ej">
-								<div class="listrow_ej">
-									<span class="listcell1_ej">번호</span> <span class="listcell2_ej">유형</span>
-									<a href="#" class="listcell3_ej">제목</a>
+							<c:forEach var="i" begin="1" end="10">
+								<div class="list_ej faqlist_ej">
+									<div class="faqlistrow_ej number${i}_ej">
+										<span class="faqlistcell1_ej">${i}</span> 
+										<span class="faqlistcell2_ej">회원 > 회원가입</span> 
+										<span class="faqlistcell3_ej">제목</span>
+									</div>
 								</div>
-								<div style="display: none;">클릭시 내용</div>
-								<div class="listrow_ej">
-									<span class="listcell1_ej">번호</span> <span class="listcell2_ej">유형</span>
-									<span class="listcell3_ej">제목</span>
-								</div>
-								<div style="display: none;">클릭시 내용</div>
-								<div class="listrow_ej">
-									<span class="listcell1_ej">번호</span> <span class="listcell2_ej">유형</span>
-									<span class="listcell3_ej">제목</span>
-								</div>
-								<div style="display: none;">클릭시 내용</div>
-								<div class="listrow_ej">
-									<span class="listcell1_ej">번호</span> <span class="listcell2_ej">유형</span>
-									<span class="listcell3_ej">제목</span>
-								</div>
-								<div style="display: none;">클릭시 내용</div>
-								<div class="listrow_ej">
-									<span class="listcell1_ej">번호</span> <span class="listcell2_ej">유형</span>
-									<span class="listcell3_ej">제목</span>
-								</div>
-								<div style="display: none;">클릭시 내용</div>
-								<div class="listrow_ej">
-									<span class="listcell1_ej">번호</span> <span class="listcell2_ej">유형</span>
-									<span class="listcell3_ej">제목</span>
-								</div>
-								<div style="display: none;">클릭시 내용</div>
-								<div class="listrow_ej">
-									<span class="listcell1_ej">번호</span> <span class="listcell2_ej">유형</span>
-									<span class="listcell3_ej">제목</span>
-								</div>
-								<div style="display: none;">클릭시 내용</div>
-								<div class="listrow_ej">
-									<span class="listcell1_ej">번호</span> <span class="listcell2_ej">유형</span>
-									<span class="listcell3_ej">제목</span>
-								</div>
-								<div style="display: none;">클릭시 내용</div>
-								<div class="listrow_ej">
-									<span class="listcell1_ej">번호</span> <span class="listcell2_ej">유형</span>
-									<span class="listcell3_ej">제목</span>
-								</div>
-								<div style="display: none;">클릭시 내용</div>
-								<div class="listrow_ej">
-									<span class="listcell1_ej">번호</span> <span class="listcell2_ej">유형</span>
-									<span class="listcell3_ej">제목</span>
-								</div>
-
-							</div>
+							</c:forEach>
 							<div class="page_ej">< 페이지 ></div>
 						</div>
 					</div>

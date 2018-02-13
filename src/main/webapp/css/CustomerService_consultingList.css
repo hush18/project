@@ -174,7 +174,7 @@ body {
 	padding: 0px 10px 0px 8px;
 	background-image: url("../images/CustomerService/minus3.png");
 	background-repeat: no-repeat;
-	background-position: 94px 1px;
+	background-position: 93px 1px;
 }
 
 .FAQ_TOP_1_ej p {
@@ -236,25 +236,25 @@ body {
 }
 
 .sub4_ej div:nth-child(2) {
-	width: 27%;
+	width: 20%;
 }
 
 .sub4_ej div:nth-child(3) {
 	background-image: url("../images/CustomerService/minus5.png");
 	background-repeat: no-repeat;
 	background-position: 1px 4px;
-	width: 37%;
+	width: 47%;
 }
 
 .sub4_ej div:nth-child(4) {
 	background-image: url("../images/CustomerService/minus5.png");
 	background-repeat: no-repeat;
 	background-position: 1px 4px;
-	width: 17%;
+	width: 14%;
 }
 
 .page_ej {
-	margin-top: 10px;
+	margin-top: -1px;
 	background-color: #F8F8F8;
 	font-size: 12px;
 	width: 100%;
@@ -318,6 +318,63 @@ body {
 	width: auto;
 }
 
-.list_content_ej{
-	height: 300px;
+.list_ej {
+	width: 100%;
+}
+
+.listrow_ej {
+	font-size: 12px;
+	color: #000;
+	line-height: 20px;
+}
+
+.listcell1_ej {
+	width: 17%;
+	text-align: center;
+}
+
+.listcell2_ej {
+	width: 17%;
+}
+
+.listcell3_ej {
+	width: 41%;
+	padding-left: 15px !important;
+}
+
+.listcell4_ej {
+	width: 11%;
+	text-align: center;
+}
+
+.listcell3_ej:hover {
+	cursor: pointer;
+    color: #5cb38b;
+    font-weight: bold;
+}
+
+.listrow_ej span{
+	display: table-cell;
+	padding: 6px 0px 6px 0;
+	border-bottom: 1px solid #9c9c9c;
+	text-decoration: none;
+	color: #000;
+	vertical-align: middle;
+}
+
+.top_content_ej {
+	border-bottom: 1px solid #9C9C9C;
+	padding: 3px 0px 0px 60px;
+	background: #F8F8F8 url("../images/CustomerService/arrow.png");
+	background-repeat: no-repeat;
+	background-position: 35px 15px;
+}
+
+.top_content_ej img {
+	margin: 10px 0px 0px 35px;
+}
+
+.top_content_ej p {
+	color: #000;
+	font-size: 12px;
 }

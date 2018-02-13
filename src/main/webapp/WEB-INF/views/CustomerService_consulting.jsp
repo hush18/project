@@ -14,7 +14,7 @@
 <body>
 <div class="widthline">
 		<div class="boss_ej">
-			<div class="url_ej">경로~</div>
+			<div class="url_ej">홈 > 고객센터 > 1:1 상담하기</div>
 			<div class="sub_boss_ej" style="display:flex;">
 				<!-- 사이드메뉴 -->
 				<div class="side_mh">
@@ -144,25 +144,25 @@
 									
 									<div class="consulting_sub2_ej">
 										<div>
-											<input type="radio" name="consulting">회원
+											<input type="radio" name="consulting" value="member">회원
 										</div>
 										<div>
-											<input type="radio" name="consulting">상품
+											<input type="radio" name="consulting" value="product">상품
 										</div>
 										<div>
-											<input type="radio" name="consulting">입금/결제
+											<input type="radio" name="consulting" value="payment">입금/결제
 										</div>
 										<div>
-											<input type="radio" name="consulting">취소/교환/환불
+											<input type="radio" name="consulting" value="cancel">취소/교환/환불
 										</div>
 										<div>
-											<input type="radio" name="consulting">주문
+											<input type="radio" name="consulting" value="order">주문
 										</div>
 										<div>
-											<input type="radio" name="consulting">배송
+											<input type="radio" name="consulting" value="delivery">배송
 										</div>
 										<div>
-											<input type="radio" name="consulting">적립
+											<input type="radio" name="consulting" value="saving">적립
 										</div>
 									</div>
 								</div>
@@ -171,15 +171,90 @@
 										세부 유형&nbsp;&nbsp;&nbsp;&nbsp;|
 									</div>
 									
-									<div class="consulting_sub2_1_ej">
+									<div class="consulting_sub2_1_ej" id="member">
 										<div>
-											<input type="radio" name="consulting">상품불량
+											<input type="radio" name="consulting2">회원가입
 										</div>
 										<div>
-											<input type="radio" name="consulting">입고/품절/절판
+											<input type="radio" name="consulting2">회원정보확인
 										</div>
 										<div>
-											<input type="radio" name="consulting">상품정보/가격
+											<input type="radio" name="consulting2">회원정보수정
+										</div>
+										<div>
+											<input type="radio" name="consulting2">회원탈퇴
+										</div>
+										<div>
+											<input type="radio" name="consulting2">휴먼계정
+										</div>
+									</div>
+									<div class="consulting_sub2_1_ej" id="product">
+										<div>
+											<input type="radio" name="consulting2">상품불량
+										</div>
+										<div>
+											<input type="radio" name="consulting2">입고/품절/절판
+										</div>
+										<div>
+											<input type="radio" name="consulting2">상품정보/가격
+										</div>
+									</div>
+									<div class="consulting_sub2_1_ej" id="payment">
+										<div>
+											<input type="radio" name="consulting2">신용카드
+										</div>
+										<div>
+											<input type="radio" name="consulting2">핸드폰 결제
+										</div>
+										<div>
+											<input type="radio" name="consulting2">실시간 계좌이체
+										</div>
+										<div>
+											<input type="radio" name="consulting2">직접 입금
+										</div>
+									</div>
+									<div class="consulting_sub2_1_ej" id="cancel">
+										<div>
+											<input type="radio" name="consulting2">취소/교환/환불 문의
+										</div>
+										<div>
+											<input type="radio" name="consulting2">취소/교환/환불 신청
+										</div>
+										<div>
+											<input type="radio" name="consulting2">취소/교환/환불 취소
+										</div>
+									</div>
+									<div class="consulting_sub2_1_ej" id="order">
+										<div>
+											<input type="radio" name="consulting2">주문조회
+										</div>
+										<div>
+											<input type="radio" name="consulting2">주문변경
+										</div>
+										<div>
+											<input type="radio" name="consulting2">주문취소
+										</div>
+									</div>
+									<div class="consulting_sub2_1_ej" id="delivery">
+										<div>
+											<input type="radio" name="consulting2">배송문의
+										</div>
+										<div>
+											<input type="radio" name="consulting2">배송/출고예정일
+										</div>
+									</div>
+									<div class="consulting_sub2_1_ej" id="saving">
+										<div>
+											<input type="radio" name="consulting2">포인트문의
+										</div>
+										<div>
+											<input type="radio" name="consulting2">포인트적립										
+										</div>
+										<div>
+											<input type="radio" name="consulting2">포인트사용
+										</div>
+										<div>
+											<input type="radio" name="consulting2">포인트소멸
 										</div>
 									</div>
 								</div>
@@ -191,7 +266,7 @@
 							<div class="consulting_ej">
 								<div class="consulting_boss1_ej">
 									<div class="consulting_sub1_ej">
-										제목&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+										제목&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
 									</div>
 									
 									<div class="consulting_sub3_ej">

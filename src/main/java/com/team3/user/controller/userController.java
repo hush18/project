@@ -186,12 +186,11 @@ public class userController {
 		return new ModelAndView("payment.users");
 	}
 	
-<<<<<<< HEAD:src/main/java/com/team3/user/main/controller/mainController.java
 	@RequestMapping(value="/addressList.do", method=RequestMethod.GET)
 	public ModelAndView addressList(HttpServletRequest request,HttpServletResponse response) {
 		
 		return new ModelAndView("addressList.empty");
-=======
+	}
 	@RequestMapping(value="/searchPwd.do", method=RequestMethod.GET)
 	public ModelAndView searchPwd(HttpServletRequest request,HttpServletResponse response) {
 		ModelAndView mav = new ModelAndView();
@@ -200,6 +199,5 @@ public class userController {
 		service.searchPwd(mav);
 		
 		return mav;
->>>>>>> 72ad0a8ee075dc1ee074261afde61d1d6d7b8fec:src/main/java/com/team3/user/controller/userController.java
 	}
 }

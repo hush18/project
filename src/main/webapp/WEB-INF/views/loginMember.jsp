@@ -13,7 +13,6 @@
 <body>
 	<div class="widthline">
 		<div class="loginline_mh">
-			<form action="userMain.do" method=get onsubmit="return loginForm(this)">
 			<div>
 				<h2 class="h2-hr">로그인</h2>
 			</div>
@@ -27,8 +26,8 @@
 			
 			<!-- 로그인 입력 칸 -->
 			<div class="on_login_mh">
+			<form action="userMain.do" method=get onsubmit="return loginForm(this)">
 				<div class="login_input_mh">
-				
 					<!-- 회원 로그인 창 -->
 					<div class="input_on_mh">
 						<div>
@@ -50,6 +49,7 @@
 							로그인</button>
 					</div>
 				</div><br/><br/>
+			</form>
 				
 				<!-- 회원 부가 서비스 -->
 				<div class="on_sub_mh">
@@ -76,7 +76,6 @@
 				</div>
 			</div>
 			</div>
-		</form>
 			
 			<!-- 비회원 조회 창 -->
 			<form action="userMain.do" method=get onsubmit="return inquiryForm(this)">
@@ -89,7 +88,7 @@
 							<input type="text" name="eAddress" />
 						</div>
 						<input type="text" name="password" 
-						value="주문 시 비밀번호를 입력해주세요." />
+						value="주문 시 입력한 비밀번호를 입력해주세요." />
 					</div>
 				</div>
 				

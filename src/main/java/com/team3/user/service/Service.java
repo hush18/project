@@ -1,6 +1,7 @@
 package com.team3.user.service;
 
 import java.io.PrintWriter;
+import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -8,10 +9,17 @@ import javax.servlet.http.HttpServletResponse;
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.HttpStatus;
 import org.apache.commons.httpclient.methods.GetMethod;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Component;
+import org.springframework.web.servlet.ModelAndView;
 
 @Component
 public class Service implements ServiceInterface {
+	
+//	@Autowired
+//	private JavaMailSender mailSender;	// email
 
 	@Override
 	public String newsfeedParsing(HttpServletRequest request, HttpServletResponse response) {
@@ -36,5 +44,29 @@ public class Service implements ServiceInterface {
 
 		return null;
 	}
-	
+
+	@Override
+	public void searchPwd(ModelAndView mav) {
+//		Map<String, Object> map = mav.getModelMap();
+//		HttpServletRequest req = (HttpServletRequest) map.get("req");
+//		
+//		
+//		String email = req.getParameter("email") + "@" + req.getParameter("emailAddress");
+////		System.out.println(email);
+//		
+//		// 메일 내용을 작성한다
+//		SimpleMailMessage msg = new SimpleMailMessage();
+//		msg.setFrom("maeng@mountainbooks.com");
+//		msg.setTo(email);
+//		msg.setSubject("제목이 이러저러합니다");
+//		msg.setText("본문이 어쩌구저쩌구합니다");
+//		 
+//		try {
+//		    mailSender.send(msg);
+//		} catch (Throwable e) {
+//			e.printStackTrace();
+//		}
+//		
+//		mav.setViewName("searchPwd.empty");
+	}
 }

@@ -6,9 +6,10 @@
 <title>㈜산책 비밀번호 찾기 이메일 인증</title>
 </head>
 <body>
-	<form action="#" >
-		<label>귀하 이메일로 전송된 인증번호를 입력해주세요.</label>
-		<input type="text" />
-	</form>
+<h1>${authNum}</h1>
+	<label>귀하 이메일로 전송된 인증번호를 입력해주세요.</label>
+	<input type="text" />
+	<button>확인</button>
+	<button>취소</button>
 </body>
 </html>

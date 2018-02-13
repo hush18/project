@@ -93,9 +93,9 @@ body {
 	margin-top: 10px; color: #3C7B5e;
 }
 
-.input_alt_mh input:nth-child(2){	width: 100px;}
+.input_alt_mh > div > div input:nth-child(1){	width: 100px;}
 
-.input_alt_mh input:nth-child(3){	width: 120px;}
+.input_alt_mh > div > div input:nth-child(2){	width: 123px;}
 
 /* .btn_alt_mh input{
 	margin-top: 60px;
@@ -171,7 +171,7 @@ body {
  
  .epn_alt_mh{ 	margin-left: 110px;}
  
- .epn_alt_mh li{ list-style: none; font-size: 12px; color: #9c9c9c;}
+ .epn_alt_mh li{ list-style: none; font-size: 12px; color: #9c9c9c; line-height: 20px;}
  
  .epn_alt_mh span{color: #3C7B5e;}
  

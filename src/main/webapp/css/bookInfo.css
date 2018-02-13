@@ -20,7 +20,7 @@
 }
 .info_jm > ul > li{
 	list-style-type: none;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 }
 .info_jm > ul > li > div{
 	display: inline-block;
@@ -63,6 +63,7 @@
 .info_menu_list_jm{
 	width: 400px;
 	overflow: hidden;
+	margin-top: 15px;
 }
 .info_menu_list_jm > div{
 	color: #5cb38b;
@@ -158,6 +159,7 @@
 
 /*리뷰정보*/
 .info_review_jm{
+	width: 800px;
 	border: 1px solid #5cb38b;
 	margin-bottom: 5px;
 }
@@ -165,41 +167,59 @@
 	width: 700px;
 	margin: 5px auto;
 	overflow: hidden;
-	margin-top: 5px;
 }
-.info_review_jm > div:nth-child(1) > *{
+.info_review_jm > div:nth-child(1){
+	width: auto;
+	margin-left: 80px;
+}
+.info_review_jm > div:nth-child(2) > *{
 	display: inline-block;
 	float: left;
 }
-.info_review_jm > div:nth-child(1) > textarea{
-	width: 580px;
+.info_review_jm > div:nth-child(2) > textarea{
+	width: 590px;
 	height: 50px;
 }
 .info_review_jm .btn-all_jm{
 	height: 56px;
 }
-.info_review_centent{}
-.info_review_jm > .info_review_centent > div{
-	display: inline-block;
-	border: 1px solid #5cb38b;
-	float: left;
+.info_review_jm > .info_review_centent_table > div >  div{
+	border: 0px solid #5cb38b;
 	border-right: 0px;
+	box-sizing: border-box;
+	font-size: 14px;
+	display: inline-block;
 }
-.info_review_jm > .info_review_centent > div:last-child{
-	border-right: 1px solid #5cb38b;
+
+
+.info_review_centent_table{
+	width:700px;
+	border-bottom: 1px solid #5cb38b;
+	padding-bottom: 5px;
+	font-size: 0px;
+	margin: 0px auto;
+	display: table;
 }
-.info_review_centent > div:nth-child(2){
+.info_review_centent_table > div{
+	display: table-row;
+}
+.info_review_centent_table > div > div{
+	display: table-cell;
+	vertical-align: middle;
+}
+.info_review_centent_table > div > div:nth-child(1){
 	width: 100px;
 	text-align: center;
 }
-.info_review_centent > div:nth-child(3){
-	width: 378px;
+.info_review_centent_table > div > div:nth-child(2){
+	width: 400px;
+	word-break:break;
 }
-.info_review_centent > div:nth-child(4){
+.info_review_centent_table > div > div:nth-child(3){
 	width: 100px;
 	text-align: center;
 }
-.info_review_centent > div:nth-child(5){
+.info_review_centent_table > div > div:nth-child(4){
 	width: 100px;
 	text-align: center;
 }

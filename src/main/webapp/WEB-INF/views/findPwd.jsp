@@ -52,7 +52,7 @@
 
 					<div class="input_sub_mh">
 						<div>
-							<input type="text" name="id" />
+							<input type="text" name="id" style="margin-top: 13px;"/>
 						</div>
 						<div>
 							<input type="text" name="name" />

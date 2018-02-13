@@ -13,7 +13,7 @@ import com.team3.user.service.ServiceInterface;
 
 
 @Controller
-public class mainController {
+public class userController {
 	
 	@Autowired
 	private ServiceInterface service;

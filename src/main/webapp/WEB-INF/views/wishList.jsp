@@ -23,7 +23,6 @@
 				});
 			}
 		});
-			
 		$(".menu_sc a").hover(function(){
 			$(this).css("color","#5CB38B");
 		},

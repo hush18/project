@@ -1,7 +1,6 @@
 package com.team3.user.service;
 
 import java.io.PrintWriter;
-
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
@@ -11,6 +10,8 @@ import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.HttpStatus;
 import org.apache.commons.httpclient.methods.GetMethod;
 import org.springframework.beans.factory.annotation.Autowired;
+/*import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;*/
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.ModelAndView;
 

@@ -138,7 +138,7 @@
 						<div class=FAQ_TOP_2_ej>
 							<h2 class="h2_hr_ej">FAQ TOP 10</h2>
 							<c:forEach var="i" begin="1" end="10">
-								<div class="list_ej mainlist_ej">
+								<div class="jlist_ej mainlist_ej">
 									<div class="number${i}_ej">
 										<span>주문하면 언제 받을 수 있나요?</span>
 									</div>

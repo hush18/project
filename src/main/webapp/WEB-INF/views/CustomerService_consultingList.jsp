@@ -158,6 +158,15 @@
 									<span class="listcell3_ej">회원가입은 어떻게 하나요?</span>
 									<span class="listcell4_ej">O</span>
 								</div>
+								<div>
+									<div>
+										<p>제목</p>
+										<p>내용</p>									
+									</div>
+									<div>
+										<p>답변</p>
+									</div>
+								</div>
 							</div>
 						</c:forEach>
 						<div class="page_ej">< 페이지 ></div>

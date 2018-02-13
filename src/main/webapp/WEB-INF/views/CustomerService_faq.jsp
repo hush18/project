@@ -148,7 +148,7 @@
 								<div>제목</div>
 							</div>
 							<c:forEach var="i" begin="1" end="10">
-								<div class="list_ej faqlist_ej">
+								<div class="jlist_ej faqlist_ej">
 									<div class="faqlistrow_ej number${i}_ej">
 										<span class="faqlistcell1_ej">${i}</span> 
 										<span class="faqlistcell2_ej">회원 > 회원가입</span> 

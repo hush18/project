@@ -1,12 +1,10 @@
 @charset "UTF-8";
 
 .btn_reset_yk {
-	background: red;
+	background: #f45e5e;
 	color: #fff;
 	border: 0px;
 	position: relative;
-	width: 200px;
-	 height: 100px;
 	padding: 0 2em;
 	cursor: pointer;
 	transition: 800ms ease all;
@@ -16,7 +14,7 @@
 
 .btn_reset_yk:hover {
 	background: #fff;
-	color: red;
+	color: #f45e5e;
 }
 
 .btn_reset_yk:before, .btn_reset_yk:after {
@@ -26,7 +24,7 @@
 	right: 0;
 	height: 2px;
 	width: 0;
-	background: red;
+	background: #f45e5e;
 	transition: 400ms ease all;
 }
 

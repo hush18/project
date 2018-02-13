@@ -6,7 +6,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" href="css/payment.css">
-<link rel="stylesheet" href="css/btn.css">
 <link rel="stylesheet" href="css/btn_yk.css">
 <!-- <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script> -->
 <script type="text/javascript" src="js/payment.js"></script>
@@ -18,6 +17,21 @@
 			//alert(className);
 			$(".payment_Detail_input_yk>."+className).css("display", "table");
 			$(".payment_Detail_input_yk>:not(."+className+")").css("display", "none");
+		});
+		
+		$("input:radio[name='shipping_address']").change(function () {
+			//alert($(this).val());
+			if($(this).val()=="normal"){
+				$("button[name='find_zipcode']").css("display","none");
+			}
+			
+			if($(this).val()=="enter_new"){
+				$("button[name='find_zipcode']").css("display","inline-block");
+			}
+			
+			if($(this).val()=="member_address_same"){
+				$("button[name='find_zipcode']").css("display","none");
+			}
 		});
 	});
 </script>
@@ -61,11 +75,11 @@
 				<div class="Shipping_input_yk">
 					<div>
 						&nbsp;&nbsp;&nbsp;&nbsp;
-						<input type="radio" name="Shipping" value="normal">
+						<input type="radio" name="shipping_address" value="normal">
 						기본 배송지&nbsp;&nbsp;&nbsp;&nbsp;
-						<input type="radio" name="Shipping" value="enter_new">
+						<input type="radio" name="shipping_address" value="enter_new">
 						새로 입력&nbsp;&nbsp;&nbsp;&nbsp;
-						<input type="radio" name="Shipping" value="member_address_same">
+						<input type="radio" name="shipping_address" value="member_address_same">
 						회원정보와 동일&nbsp;&nbsp;&nbsp;&nbsp;
 					</div>
 					<div>
@@ -106,12 +120,14 @@
 					</div>
 					<div style="height: 100px;">
 						&nbsp;&nbsp;&nbsp;&nbsp;
-						<input type="text" name="zipcode">
+						<input type="text" name="zipcode" disabled="disabled">
+						<input type="hidden" name="zipcode">
 						&nbsp;&nbsp;
-						<button name="find_zipcode">주소찾기</button>
+						<button name="find_zipcode" style="display: none;">주소찾기</button>
 						<br>
 						&nbsp;&nbsp;&nbsp;&nbsp;
-						<input type="text" name="address_first">
+						<input type="text" name="address_first" disabled="disabled">
+						<input type="hidden" name="address_first">
 						&nbsp;&nbsp;
 						<input type="text" name="address_second">
 					</div>

@@ -95,14 +95,14 @@ body {
 }
 
 .sub4_ej div:nth-child(2) {
-	width: 27%;
+	width: 22%;
 }
 
 .sub4_ej div:nth-child(3) {
 	background-image: url("../images/CustomerService/minus5.png");
 	background-repeat: no-repeat;
 	background-position: 1px 4px;
-	width: 37%;
+	width: 42%;
 }
 
 .sub4_ej div:nth-child(4) {
@@ -121,4 +121,45 @@ body {
 	color: #000;
 	line-height: 25px;
 	text-align: center;
+}
+
+.sub5_ej{
+    font-size: 12px;
+    color: #000;
+    line-height: 20px;
+    text-align: center;
+    border-bottom: 1px solid #9c9c9c;
+    height: 45px;
+}
+
+.sub5_ej ul{
+	padding: 0px;
+}
+
+.sub5_ej li{
+	float: left;
+	list-style: none;
+}
+
+.sub5_li1_ej{
+	width: 15%;
+    padding-left: 26px;
+    cursor: pointer;
+}
+
+.sub5_li1_ej:hover{
+	color: #5cb38b;
+	font-weight: bold;
+}
+
+.sub5_li2_ej{
+    width: 22%;
+}
+
+.sub5_li3_ej{
+	width: 38%;
+}
+
+.sub5_li4_ej{
+    width: 13%;
 }

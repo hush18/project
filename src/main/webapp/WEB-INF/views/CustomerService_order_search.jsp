@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>	
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -27,8 +28,18 @@
 				<div>주문일자</div>
 				<div>주문번호</div>
 				<div>주문상품</div>
-				<div>입금금액</div>
+				<div>수량</div>
 			</div>
+			<c:forEach var="i" begin="1" end="5">
+			<div class="sub5_ej">
+				<ul>
+					<li class="sub5_li1_ej">2018.02.13</li>
+					<li class="sub5_li2_ej">1125412485</li>
+					<li class="sub5_li3_ej"><a>die냐 Diet냐 - 다이냐 다이어트냐</a></li>
+					<li class="sub5_li4_ej">1</li>
+				</ul>
+			</div>
+		</c:forEach>
 		</div>
 		<div class="page2_ej">< 페이지 ></div>
 	</div>

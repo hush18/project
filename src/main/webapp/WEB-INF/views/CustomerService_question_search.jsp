@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>	
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -28,7 +29,16 @@
 			<div>발행일</div>
 			<div>가격</div>
 		</div>
-		<div>내용~</div>
+		<c:forEach var="i" begin="1" end="5">
+		<div class="qsub5_ej">
+			<ul>
+				<li class="qsub5_li1_ej"><a>die냐 Diet냐 - 다이냐 다이어트냐</a></li>
+				<li class="qsub5_li2_ej">김민석</li>
+				<li class="qsub5_li3_ej">2006.12.15</li>
+				<li class="qsub5_li4_ej">69,000</li>
+			</ul>
+		</div>
+		</c:forEach>
 	</div>
 	<div class="page2_ej">< 페이지 ></div>
 </div>	

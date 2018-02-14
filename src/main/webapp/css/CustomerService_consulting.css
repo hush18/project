@@ -209,13 +209,13 @@ body {
 	height: 200px;
 }
 
-.consulting_sub2_1_ej{
+.consulting_sub2_2_ej, .consulting_sub2_1_ej{
 	overflow: hidden;
 	height: 50px;
 	line-height: 50px;
 }
 
-.consulting_sub2_1_ej input[type=text]{
+.consulting_sub2_2_ej input[type=text]{
 	margin-left: 10px;
 	outline-color: #5cb38b;
 	color:#000;

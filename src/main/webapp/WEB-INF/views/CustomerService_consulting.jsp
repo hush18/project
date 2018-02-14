@@ -274,24 +274,24 @@
 									</div>
 								</div>
 								
-								<div class="consulting_boss1_ej" style="display: black;">
+								<div class="consulting_boss1_ej conpop1_ej">
 									<div class="consulting_sub1_ej">
 										문의 상품명&nbsp;&nbsp;|
 									</div>
 									
 									<div class="consulting_sub3_ej">
-										<input type="text" name="title" size="20">
+										<input type="text" name="title" size="20" readonly>
 										<a id="questionSearch" class="consulting_abtn1_ej">조회</a>
 									</div>
 								</div>
 								
-								<div class="consulting_boss1_ej" style="display: black;">
+								<div class="consulting_boss1_ej conpop2_ej">
 									<div class="consulting_sub1_ej">
 										주문 상품명&nbsp;&nbsp;|
 									</div>
 									
 									<div class="consulting_sub3_ej">
-										<input type="text" name="title" size="20">
+										<input type="text" name="title" size="20" readonly>
 										<a id="orderSearch" class="consulting_abtn1_ej">조회</a>
 									</div>
 								</div>
@@ -312,7 +312,7 @@
 											답변 여부&nbsp;&nbsp;&nbsp;&nbsp;|
 										</div>
 									</div>
-									<div class="consulting_sub2_1_ej">
+									<div class="consulting_sub2_2_ej">
 										<input type="radio" name="emailing"> 이메일 허용
 										<input type="radio" name="emailing"> 허용 안함
 										<input type="text" name="email" size="30">

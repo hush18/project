@@ -1,21 +1,22 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
-<link href="css/CustomerService_consultingList.css" rel="stylesheet"
+<title>고객센터 회원</title>
+<link href="css/CustomerService_faq.css" rel="stylesheet"
 	type="text/css" />
 <!-- <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script> -->
-<script src="js/CustomerService_consulting.js" type="text/javascript"></script>
+<script src="js/CustomerService.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/sideCategory.js"></script>
 <link type="text/css" rel="stylesheet" href="css/sideCategory.css" />
 </head>
 <body>
 	<div class="widthline">
 		<div class="boss_ej">
-			<div class="url_ej">경로~</div>
+			<div class="url_ej">홈 > FAQ ></div>
 			<div class="sub_boss_ej" style="display: flex;">
 				<!-- 사이드메뉴 -->
 				<div class="side_mh">
@@ -130,27 +131,33 @@
 
 					<div class="FAQ_TOP_ej">
 						<div class="FAQ_TOP_1_ej">
-							<h3>1:1 상담내역</h3>
+							<h3>자주 찾는 질문</h3>
 							<p>
-								1:1 상담은 24시간 신청가능하며 접수된<br />내용은 빠른 시일 내에 답변 해드리겠습니다.
+								고객님께서 가장 궁금하신 부분을 <br />FAQ를 통해 간편하게 해결할 수 있습니다.
 							</p>
 						</div>
-
-						<div class="sub3_ej">
-							<div>기간별 조회&nbsp;&nbsp;&nbsp;|</div>
-							<div>
-								<a href="#">15일</a> <a href="#">1개월</a> <a href="#">2개월</a> <a
-									href="#">3개월</a>
+						<div class=FAQ_TOP_2_ej>
+							<h2 class="h2_hr_ej">회원 FAQ</h2>
+							<div class="sub_category_ej">
+								<a href="#">전체</a> <a href="#">상품불량</a> <a href="#">입고/품절/절판</a>
+								<a href="#">상품정보/가격</a>
 							</div>
+							<div class="faqlist_header_ej">
+								<div>번호</div>
+								<div>질문유형</div>
+								<div>제목</div>
+							</div>
+							<c:forEach var="i" begin="1" end="10">
+								<div class="jlist_ej faqlist_ej">
+									<div class="faqlistrow_ej number${i}_ej">
+										<span class="faqlistcell1_ej">${i}</span> 
+										<span class="faqlistcell2_ej">회원 > 회원가입</span> 
+										<span class="faqlistcell3_ej">제목</span>
+									</div>
+								</div>
+							</c:forEach>
+							<div class="page_ej">< 페이지 ></div>
 						</div>
-						<div class="sub4_ej">
-							<div>주문일자</div>
-							<div>주문번호</div>
-							<div>주문상품</div>
-							<div>입금금액</div>
-						</div>
-						<div class="list_content_ej">내용</div>
-						<div class="page_ej">< 페이지 ></div>
 					</div>
 				</div>
 			</div>

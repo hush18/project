@@ -11,15 +11,15 @@
 	
 	<!-- Content 만들기 -->
 	<definition name="*.users" extends="layout">
-		<put-attribute name="content" value="/WEB-INF/views/{1}.jsp"/>
+		<put-attribute name="content" value="/WEB-INF/views/userView/{1}.jsp"/>
 	</definition>
 	
 	<definition name="*/*.users" extends="layout">
-		<put-attribute name="content" value="/WEB-INF/views/{1}/{2}.jsp"/>
+		<put-attribute name="content" value="/WEB-INF/views/userView/{1}/{2}.jsp"/>
 	</definition>
 	
 	<definition name="*/*/*.users" extends="layout">
-		<put-attribute name="content" value="/WEB-INF/views/{1}/{2}/{3}.jsp"/>
+		<put-attribute name="content" value="/WEB-INF/views/userView/{1}/{2}/{3}.jsp"/>
 	</definition>
 	
 	<!-- Tiles 제외하고 오직 jsp 페이지만 나오도록 -->
@@ -28,10 +28,10 @@
 	</definition>
 	
 	<definition name="*.empty" extends="empty">
-		<put-attribute name="content" value="/WEB-INF/views/{1}.jsp"/>
+		<put-attribute name="content" value="/WEB-INF/views/userView/{1}.jsp"/>
 	</definition>
 	
 	<definition name="*/*.empty" extends="empty">
-		<put-attribute name="content" value="/WEB-INF/views/{1}/{2}.jsp"/>
+		<put-attribute name="content" value="/WEB-INF/views/userView/{1}/{2}.jsp"/>
 	</definition>
 </tiles-definitions>

@@ -71,6 +71,8 @@
 						<input type="text" name="cellphone_second" style="width: 100px;">&nbsp;&nbsp;
 						-&nbsp;&nbsp;
 						<input type="text" name="cellphone_third" style="width: 100px;">
+						<!-- 위 3개 값 합쳐서 밑에다 넣음 -->
+						<input type="hidden" name="" value="">
 					</div>
 					<div>
 						&nbsp;&nbsp;&nbsp;&nbsp;
@@ -90,6 +92,9 @@
 						<input type="text" name="telephone_second" style="width: 100px;">&nbsp;&nbsp;
 						-&nbsp;&nbsp;
 						<input type="text" name="telephone_third" style="width: 100px;">
+						
+						<!-- 위 3개 값 합쳐서 밑에다 넣음 -->
+						<input type="hidden" name="" value="">
 					</div>
 					<div style="height: 100px;">
 						&nbsp;&nbsp;&nbsp;&nbsp;
@@ -220,6 +225,12 @@
 									<option value="11">11개월</option>
 									<option value="12">12개월</option>
 								</select>
+							</div>
+							<div>
+								<input type="text" name="credit_card_1" style="width: 70px;"> -
+								<input type="text" name="credit_card_2" style="width: 70px;"> -
+								<input type="text" name="credit_card_3" style="width: 70px;"> -
+								<input type="text" name="credit_card_4" style="width: 70px;">
 							</div>
 						</div>
 					</div>

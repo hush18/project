@@ -16,11 +16,18 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.team3.aop.LogAspect;
+import com.team3.user.member.dao.MemberDao;
+import com.team3.user.member.dto.MemberDto;
+
 @Component
 public class Service implements ServiceInterface {
 	
 	@Autowired
 	private JavaMailSender mailSender;	// email
+	
+	@Autowired
+	private MemberDao memberDao;
 
 	@Override
 	public String newsfeedParsing(HttpServletRequest request, HttpServletResponse response) {
@@ -71,6 +78,18 @@ public class Service implements ServiceInterface {
 		
 		mav.addObject("authNum", authNum);
 		mav.setViewName("searchPwd.empty");
+	}
+	
+	@Override
+	public void memberLoginOK(ModelAndView mav) {
+		Map<String, Object> map=mav.getModelMap();
+		HttpServletRequest request=(HttpServletRequest) map.get("request");
+		
+		String id=request.getParameter("id");
+		String password=request.getParameter("password");
+		LogAspect.logger.info("로그인시작:"+id+"\t"+password);
+		
+		/*MemberDto memberDto=memberDao.*/
 	}
 
 	@Override

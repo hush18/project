@@ -18,7 +18,7 @@
 </script>
 </head>
 <body>
-	<form action="searchPwd.do" method="get" onsubmit="searchPw(this)">
+	<form action="searchPwd.do" method="get">
 		<div class="widthline">
 			<div class="fi_mh">
 				<h2 class="h2-hr" style="padding-left: 20px;">비밀번호 찾기</h2>

@@ -200,4 +200,19 @@ public class userController {
 		
 		return mav;
 	}
+	
+	@RequestMapping(value="/searchPwdOK.do", method=RequestMethod.GET)
+	public ModelAndView pwd(HttpServletRequest request,HttpServletResponse response) {
+		
+		return new ModelAndView("searchPwdOK.empty");
+	}
+	
+	@RequestMapping(value="/memberLoginOK.do", method=RequestMethod.POST)
+	public ModelAndView memberLoginOK(HttpServletRequest request,HttpServletResponse response) {
+		ModelAndView mav=new ModelAndView();
+		mav.addObject("request", request);
+		service.memberLoginOK(mav);
+		
+		return mav;
+	}
 }

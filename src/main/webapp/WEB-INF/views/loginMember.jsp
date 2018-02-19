@@ -1,11 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>로그인</title>
 <!-- <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script> -->
+
+<c:set var="root" value="${pageContext.request.contextPath }"/>
 
 <link href="css/loginMember.css" type="text/css" rel="stylesheet" />
 <script type="text/javascript" src="js/loginMember.js"></script>
@@ -24,9 +27,9 @@
 				</ul>
 			</div><br/><br/>
 			
-			<!-- 로그인 입력 칸 -->
+			<!-- 회원 로그인 입력 칸 -->
 			<div class="on_login_mh">
-			<form action="userMain.do" method=get onsubmit="return loginForm(this)">
+			<form action="${root }/memberLoginOK.do" method=post onsubmit="return loginForm(this)">
 				<div class="login_input_mh">
 					<!-- 회원 로그인 창 -->
 					<div class="input_on_mh">

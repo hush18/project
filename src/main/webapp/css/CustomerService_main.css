@@ -33,76 +33,6 @@ body {
 	margin-bottom: 5px;
 }
 
-.category_ej {
-	width: 18%;
-	border: 0px solid #9C9C9C;
-	font-size: 12px;
-	display: block;
-}
-
-.category_FAQ_ej {
-	width: 100%;
-	border: 1px solid #9C9C9C;
-	height: auto;
-}
-
-.category_FAQ_ej h2, .category_FAQ_ej h3, .category_counsel_ej h3 {
-	margin-left: 20px;
-}
-
-.category_FAQ_ej h2 a{
-	color: #5cb38b;
-}
-
-.category_FAQ_ej h2 a:hover{
-	cursor: pointer;
-}
-
-.line-ej {
-	width: 80%;
-	border-bottom: 1px solid #9C9C9C;
-	margin-left: 18px;
-}
-
-.category_ej ul {
-	color: #9C9C9C;
-	padding-left: 20px;
-	list-style: none;
-}
-
-.category_ej li {
-	margin: 10px auto;
-}
-
-.category_time_ej {
-	width: 100%;
-	border: 1px solid #9C9C9C;
-	margin-top: 5px;
-	height: auto;
-}
-
-.category_time_ej h2{
-	margin-top: -15px;
-}
-
-.category_time_ej div:nth-child(1){
-	text-align: center;
-    margin-bottom: -59px;
-}
-
-.category_time_ej div:nth-child(2){
-	margin-top: 60px;
-    font-size: 10px;
-    color: #9C9C9C;
-}
-
-.category_time_ej div:last-child {
-	margin-top: 1px;
-	font-size: 10px;
-	color: #9C9C9C;
-	margin-bottom: 10px;
-}
-
 .content_ej{
 	border: 0px solid #9C9C9C;
 	display: grid;
@@ -180,11 +110,11 @@ body {
 	padding-bottom: 10px;
 }
 
-.faqList_ej{
+.mainlist_ej{
 	padding-left: 15px;
 }
 
-.faqList_ej div:nth-child(odd){
+.mainlist_ej div:nth-child(odd){
 	margin-top: 10px;
 	margin-bottom: 10px;
     padding: 0px 0 8px 28px;
@@ -193,58 +123,63 @@ body {
     
 }
 
-.faqList_ej a{
-	text-decoration: none;
+.mainlist_ej span{
 	color: #000;
 	font-size: 12px;
 }
 
-.faqList_ej .number1_ej{
+.mainlist_ej span:hover{
+	font-weight: bold;
+	cursor: pointer;
+	color: #5cb38b;
+}
+
+.mainlist_ej .number1_ej{
 	background-image: url("../images/CustomerService/one.png");
 	background-repeat: no-repeat;
 }
 
-.faqList_ej .number2_ej{
+.mainlist_ej .number2_ej{
 	background-image: url("../images/CustomerService/two.png");
 	background-repeat: no-repeat;
 }
 
-.faqList_ej .number3_ej{
+.mainlist_ej .number3_ej{
 	background-image: url("../images/CustomerService/three.png");
 	background-repeat: no-repeat;
 }
 
-.faqList_ej .number4_ej{
+.mainlist_ej .number4_ej{
 	background-image: url("../images/CustomerService/four.png");
 	background-repeat: no-repeat;
 }
 
-.faqList_ej .number5_ej{
+.mainlist_ej .number5_ej{
 	background-image: url("../images/CustomerService/five.png");
 	background-repeat: no-repeat;
 }
 
-.faqList_ej .number6_ej{
+.mainlist_ej .number6_ej{
 	background-image: url("../images/CustomerService/six.png");
 	background-repeat: no-repeat;
 }
 
-.faqList_ej .number7_ej{
+.mainlist_ej .number7_ej{
 	background-image: url("../images/CustomerService/seven.png");
 	background-repeat: no-repeat;
 }
 
-.faqList_ej .number8_ej{
+.mainlist_ej .number8_ej{
 	background-image: url("../images/CustomerService/eight.png");
 	background-repeat: no-repeat;
 }
 
-.faqList_ej .number9_ej{
+.mainlist_ej .number9_ej{
 	background-image: url("../images/CustomerService/nine.png");
 	background-repeat: no-repeat;
 }
 
-.faqList_ej .number10_ej{
+.mainlist_ej .number10_ej{
 	background-image: url("../images/CustomerService/ten.png");
 	background-repeat: no-repeat;
 }

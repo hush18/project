@@ -31,6 +31,7 @@
 					<div class="swiper-slide" style="background-image: url(images/mainPage/event1.jpg)"></div>
 					<div class="swiper-slide" style="background-image: url(images/mainPage/event2.jpg)"></div>
 					<div class="swiper-slide" style="background-image: url(images/mainPage/event3.jpg)"></div>
+					<div class="swiper-slide" style="background-image: url(images/mainPage/event4.jpg)"></div>
 				</div>
 
 				<!-- Add Pagination -->

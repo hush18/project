@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>	
+<!DOCTYPE html PUBLIC "-//W3C//Ddiv HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.ddiv">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -8,14 +9,14 @@
 <link href="css/CustomerService_main.css" rel="stylesheet"
 	type="text/css" />
 <!-- <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script> -->
-<script src="js/CustomerService_main.js" type="text/javascript"></script>
+<script src="js/CustomerService.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/sideCategory.js"></script>
 <link type="text/css" rel="stylesheet" href="css/sideCategory.css" />
 </head>
 <body>
 	<div class="widthline">
 		<div class="boss_ej">
-			<div class="url_ej">경로~</div>
+			<div class="url_ej">홈 > 고객센터</div>
 			<div class="sub_boss_ej" style="display: flex;">
 				<!-- 사이드메뉴 -->
 				<div class="side_mh">
@@ -136,72 +137,13 @@
 
 						<div class=FAQ_TOP_2_ej>
 							<h2 class="h2_hr_ej">FAQ TOP 10</h2>
-							<div class="faqList_ej">
-								<div class="number1_ej">
-									<a href="javascript:openContent('1');">주문하면 언제 받을 수 있나요?</a>
+							<c:forEach var="i" begin="1" end="10">
+								<div class="jlist_ej mainlist_ej">
+									<div class="number${i}_ej">
+										<span>주문하면 언제 받을 수 있나요?</span>
+									</div>
 								</div>
-								<div class="top_content_ej" id="1" style="display: none;">
-									<p>반디앤루니스 회원가입은 무료이며, 메인화면 상단의 [회원가입]을 클릭하시면 안내되는 화면에 따라
-										회원가입이 가능합니다. 반디앤루니스는 회원 유형별로 가입절차에 차이가 있으니, 해당하시는 유형을 선택하시어
-										회원가입을 해주시기 바랍니다. 회원가입시 제공하신 개인정보는 반디앤루니스 서비스에 이용되며, 그 이외 용도로는
-										절대 사용하지 않습니다.</p>
-								</div>
-								<div class="number2_ej">
-									<a href="javascript:openContent('2');" id="toggle">파라메타는
-										카테고리(고유번호)와 게시물번호</a>
-								</div>
-								<div class="top_content_ej" id="2" style="display: none;">
-									<p>내용</p>
-								</div>
-								<div class="number3_ej">
-									<a href="javascript:openContent('3');">배송비는 얼마인가요?</a>
-								</div>
-								<div class="top_content_ej" id="3" style="display: none;">
-									<p>내용</p>
-								</div>
-								<div class="number4_ej">
-									<a href="javascript:openContent('4');">제목</a>
-								</div>
-								<div class="top_content_ej" id="4" style="display: none;">
-									<p>내용</p>
-								</div>
-								<div class="number5_ej">
-									<a href="#">제목</a>
-								</div>
-								<div class="top_content_ej" id="2" style="display: none;">
-									<p>내용</p>
-								</div>
-								<div class="number6_ej">
-									<a href="#">제목</a>
-								</div>
-								<div class="top_content_ej" id="2" style="display: none;">
-									<p>내용</p>
-								</div>
-								<div class="number7_ej">
-									<a href="#">제목</a>
-								</div>
-								<div class="top_content_ej" id="2" style="display: none;">
-									<p>내용</p>
-								</div>
-								<div class="number8_ej">
-									<a href="#">제목</a>
-								</div>
-								<div class="top_content_ej" id="2" style="display: none;">
-									<p>내용</p>
-								</div>
-								<div class="number9_ej">
-									<a href="#">제목</a>
-								</div>
-								<div class="top_content_ej" id="2" style="display: none;">
-									<p>내용</p>
-								</div>
-								<div class="number10_ej">
-									<a href="#">제목</a>
-								</div>
-								<div class="top_content_ej" id="2" style="display: none;">
-									<p>내용</p>
-								</div>
-							</div>
+							</c:forEach>
 						</div>
 					</div>
 				</div>

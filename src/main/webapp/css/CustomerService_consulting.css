@@ -33,76 +33,6 @@ body {
 	margin-bottom: 5px;
 }
 
-.category_ej {
-	width: 18%;
-	border: 0px solid #9C9C9C;
-	font-size: 12px;
-	display: block;
-}
-
-.category_FAQ_ej {
-	width: 100%;
-	border: 1px solid #9C9C9C;
-	height: auto;
-}
-
-.category_FAQ_ej h2, .category_FAQ_ej h3, .category_counsel_ej h3 {
-	margin-left: 20px;
-}
-
-.category_FAQ_ej h2 a{
-	color: #5cb38b;
-}
-
-.category_FAQ_ej h2 a:hover{
-	cursor: pointer;
-}
-
-.line-ej {
-	width: 80%;
-	border-bottom: 1px solid #9C9C9C;
-	margin-left: 18px;
-}
-
-.category_ej ul {
-	color: #9C9C9C;
-	padding-left: 20px;
-	list-style: none;
-}
-
-.category_ej li {
-	margin: 10px auto;
-}
-
-.category_time_ej {
-	width: 100%;
-	border: 1px solid #9C9C9C;
-	margin-top: 5px;
-	height: auto;
-}
-
-.category_time_ej h2{
-	margin-top: -15px;
-}
-
-.category_time_ej div:nth-child(1){
-	text-align: center;
-    margin-bottom: -59px;
-}
-
-.category_time_ej div:nth-child(2){
-	margin-top: 60px;
-    font-size: 10px;
-    color: #9C9C9C;
-}
-
-.category_time_ej div:last-child {
-	margin-top: 1px;
-	font-size: 10px;
-	color: #9C9C9C;
-	margin-bottom: 10px;
-}
-
 .content_ej{
 	border: 0px solid #9C9C9C;
 	display: grid;
@@ -279,13 +209,13 @@ body {
 	height: 200px;
 }
 
-.consulting_sub2_1_ej{
+.consulting_sub2_2_ej, .consulting_sub2_1_ej{
 	overflow: hidden;
 	height: 50px;
 	line-height: 50px;
 }
 
-.consulting_sub2_1_ej input[type=text]{
+.consulting_sub2_2_ej input[type=text]{
 	margin-left: 10px;
 	outline-color: #5cb38b;
 	color:#000;

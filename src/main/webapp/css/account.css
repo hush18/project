@@ -9,7 +9,6 @@
 	color: #4c4c4c;
 }
 
-
 .container h1 {
 	font-size: 32px;
 	font-weight: 300;
@@ -20,7 +19,9 @@
 }
 
 .container {
-	margin: 20px auto; margin-top: 0px; margin-bottom: 0px;
+	margin: 20px auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	width: 1000px;
 	height: 510px;
 	-webkit-border-radius: 8px/7px;
@@ -91,7 +92,7 @@
 
 .col-iy input[type=text], input[type=password] {
 	width: 50%;
-	height: 39px;
+	height: 40px;
 	-webkit-border-radius: 0px 4px 4px 0px/5px 5px 4px 4px;
 	-moz-border-radius: 0px 4px 4px 0px/0px 0px 4px 4px;
 	border-radius: 0px 4px 4px 0px/5px 5px 4px 4px;
@@ -103,6 +104,20 @@
 	margin-left: -5px;
 	margin-top: 13px;
 	padding-left: 10px;
+}
+
+.col-iy input[name=address] {
+	width: 34.5%;
+	display: inline-block;
+}
+
+.col-iy .button {
+	height: 33px;
+	float: inherit;
+	line-height: 31px;
+	vertical-align: middle;
+	margin-bottom: 6px;
+	margin-left: 30px;
 }
 
 #email {
@@ -167,7 +182,8 @@ a.button:hover {
 	margin: 0 auto;
 }
 
-.btn-iy a {
+.button {
+	text-align: center;
 	margin: 0 10px;
 }
 

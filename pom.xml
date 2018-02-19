@@ -13,6 +13,7 @@
 		<org.aspectj-version>1.6.10</org.aspectj-version>
 		<org.slf4j-version>1.6.6</org.slf4j-version>
 	</properties>
+
 	<dependencies>
 		<!-- Spring -->
 		<dependency>
@@ -247,8 +248,7 @@
 			<artifactId>spring-context-support</artifactId>
 			<version>4.3.10.RELEASE</version>
 		</dependency>
-
-
+		
 		<dependency>
 			<groupId>javax.mail</groupId>
 			<artifactId>mail</artifactId>

@@ -1,5 +1,9 @@
 Manifest-Version: 1.0
+<<<<<<< HEAD
 Built-By: SIST3-110
+=======
+Built-By: SIST3-109
+>>>>>>> 008b826fb8ede339cf9f089835e7e26848b429f2
 Build-Jdk: 1.8.0_144
 Created-By: Maven Integration for Eclipse
 

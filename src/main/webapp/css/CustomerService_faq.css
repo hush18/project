@@ -33,76 +33,6 @@ body {
 	margin-bottom: 5px;
 }
 
-.category_ej {
-	width: 18%;
-	border: 0px solid #9C9C9C;
-	font-size: 12px;
-	display: block;
-}
-
-.category_FAQ_ej {
-	width: 100%;
-	border: 1px solid #9C9C9C;
-	height: auto;
-}
-
-.category_FAQ_ej h2, .category_FAQ_ej h3, .category_counsel_ej h3 {
-	margin-left: 20px;
-}
-
-.category_FAQ_ej h2 a{
-	color: #5cb38b;
-}
-
-.category_FAQ_ej h2 a:hover{
-	cursor: pointer;
-}
-
-.line-ej {
-	width: 80%;
-	border-bottom: 1px solid #9C9C9C;
-	margin-left: 18px;
-}
-
-.category_ej ul {
-	color: #9C9C9C;
-	padding-left: 20px;
-	list-style: none;
-}
-
-.category_ej li {
-	margin: 10px auto;
-}
-
-.category_time_ej div:nth-child(1){
-	text-align: center;
-	margin-bottom: -59px;
-}
-
-.category_time_ej {
-	width: 100%;
-	border: 1px solid #9C9C9C;
-	margin-top: 5px;
-	height: auto;
-}
-
-.category_time_ej h2 {
-	margin-top: -15px;
-}
-
-.category_time_ej div:nth-child(2) {
-	margin-top: 60px;
-	font-size: 10px;
-	color: #9C9C9C;
-}
-
-.category_time_ej div:last-child {
-	margin-top: 1px;
-	font-size: 10px;
-	color: #9C9C9C;
-	margin-bottom: 10px;
-}
-
 .content_ej {
 	border: 0px solid #9C9C9C;
 	display: grid;
@@ -218,7 +148,7 @@ body {
 }
 
 .faqlist_header_ej div {
-	float:left;
+	float: left;
 	text-align: center;
 }
 
@@ -226,22 +156,39 @@ body {
 	background-image: url("../images/CustomerService/minus5.png");
 	background-repeat: no-repeat;
 	background-position: 70px 4px;
-	width: 14%;
+	width: 13%;
 }
 
 .faqlist_header_ej div:nth-child(2) {
-	width: 15%;
+	width: 18%;
 }
 
 .faqlist_header_ej div:nth-child(3) {
 	background-image: url("../images/CustomerService/minus5.png");
 	background-repeat: no-repeat;
 	background-position: 5px 4px;
-	width: 71%
+	width: 69%
+}
+
+.top_content_ej {
+	border-bottom: 1px solid #9C9C9C;
+	padding: 3px 0px 0px 60px;
+	background: #F8F8F8 url("../images/CustomerService/arrow.png");
+	background-repeat: no-repeat;
+	background-position: 35px 15px;
+}
+
+.top_content_ej img {
+	margin: 10px 0px 0px 35px;
+}
+
+.top_content_ej p {
+	color: #000;
+	font-size: 12px;
 }
 
 .page_ej {
-	margin-top: 15px;
+	margin-top: -1px;
 	border: 1px solid #9c9c9c;
 	background-color: #F8F8F8;
 	font-size: 12px;
@@ -250,40 +197,45 @@ body {
 	color: #000;
 	line-height: 25px;
 	text-align: center;
-	margin-top: -1px;
 }
 
 .faqlist_ej {
 	width: 100%;
-	display: table;
 }
 
-.listrow_ej {
-	display: table-row;
+.faqlistrow_ej {
 	font-size: 12px;
 	color: #000;
-	line-height: 24px; 
+	line-height: 20px;
 }
 
-.listrow_ej span, .listrow_ej a{
+.faqlistrow_ej span, .faqlistrow_ej a {
 	display: table-cell;
-	padding: 3px;
+    padding: 6px 0px 6px 0;
 	border-bottom: 1px solid #9c9c9c;
 	text-decoration: none;
 	color: #000;
+    vertical-align: middle;
 }
 
-.listcell1_ej {
+.faqlistcell1_ej {
 	width: 13%;
 	text-align: center;
 }
 
-.listcell2_ej {
-	width: 15%;
+.faqlistcell2_ej {
+	width: 16%;
 }
 
-.listcell3_ej {
-	width: 62%;
+.faqlistcell3_ej {
+	width: 65%;
+	padding-left: 15px !important;
+}
+
+.faqlistcell3_ej:hover {
+	cursor: pointer;
+    color: #5cb38b;
+    font-weight: bold;
 }
 
 .btn-all {
@@ -328,11 +280,11 @@ body {
 	transition: 800ms ease all;
 }
 
-.btn_ej{
+.btn_ej {
 	height: 21px;
 	padding: 0 0.5em;
-	padding-top:5px;
-	margin-left:5px;
+	padding-top: 5px;
+	margin-left: 5px;
 	text-decoration: none;
 	border-radius: 3px;
 	font-size: 12px;

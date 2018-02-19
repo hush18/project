@@ -1,6 +1,7 @@
 package com.team3.user.service;
 
 import java.io.PrintWriter;
+import java.util.List;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
@@ -89,5 +90,20 @@ public class Service implements ServiceInterface {
 		LogAspect.logger.info("로그인시작:"+id+"\t"+password);
 		
 		/*MemberDto memberDto=memberDao.*/
+	}
+
+	@Override
+	public void zipcode(ModelAndView mav) {
+		Map<String, Object> map=mav.getModelMap();
+		HttpServletRequest request=(HttpServletRequest) map.get("request");
+		
+		String dong=request.getParameter("dong");
+		
+		if(dong!=null) {
+//			List<ZipcodeDto> zipList=memberDao.zipcodeDto(dong);
+//			mav.addObject("zipcodeList", zipList);
+		}
+		
+		mav.setViewName("zipcode.empty");
 	}
 }

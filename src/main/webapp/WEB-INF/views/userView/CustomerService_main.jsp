@@ -1,21 +1,22 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>	
+<!DOCTYPE html PUBLIC "-//W3C//Ddiv HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.ddiv">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>고객센터 회원</title>
-<link href="css/CustomerService_faq.css" rel="stylesheet"
+<title>고객센터 메인</title>
+<link href="css/CustomerService_main.css" rel="stylesheet"
 	type="text/css" />
 <!-- <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script> -->
-<script src="js/CustomerService_faq.js" type="text/javascript"></script>
+<script src="js/CustomerService.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/sideCategory.js"></script>
 <link type="text/css" rel="stylesheet" href="css/sideCategory.css" />
 </head>
 <body>
 	<div class="widthline">
 		<div class="boss_ej">
-			<div class="url_ej">경로~</div>
+			<div class="url_ej">홈 > 고객센터</div>
 			<div class="sub_boss_ej" style="display: flex;">
 				<!-- 사이드메뉴 -->
 				<div class="side_mh">
@@ -130,75 +131,19 @@
 
 					<div class="FAQ_TOP_ej">
 						<div class="FAQ_TOP_1_ej">
-							<h3>자주 찾는 질문</h3>
-							<p>
-								고객님께서 가장 궁금하신 부분을 <br />FAQ를 통해 간편하게 해결할 수 있습니다.
-							</p>
+							<h3>산책 고객센터</h3>
+							<p>고객님의 문의 사항이나 불편 사항을 말씀해주세요. 최선을 다하겠습니다.</p>
 						</div>
-						<div class=FAQ_TOP_2_ej>
-							<h2 class="h2_hr_ej">회원 FAQ</h2>
-							<div class="sub_category_ej">
-								<a href="#">전체</a> <a href="#">상품불량</a> <a href="#">입고/품절/절판</a>
-								<a href="#">상품정보/가격</a>
-							</div>
-							<div class="faqlist_header_ej">
-								<div>번호</div>
-								<div>질문유형</div>
-								<div>제목</div>
-							</div>
-							<div class="faqlist_ej">
-								<div class="listrow_ej">
-									<span class="listcell1_ej">번호</span> <span class="listcell2_ej">유형</span>
-									<a href="#" class="listcell3_ej">제목</a>
-								</div>
-								<div style="display: none;">클릭시 내용</div>
-								<div class="listrow_ej">
-									<span class="listcell1_ej">번호</span> <span class="listcell2_ej">유형</span>
-									<span class="listcell3_ej">제목</span>
-								</div>
-								<div style="display: none;">클릭시 내용</div>
-								<div class="listrow_ej">
-									<span class="listcell1_ej">번호</span> <span class="listcell2_ej">유형</span>
-									<span class="listcell3_ej">제목</span>
-								</div>
-								<div style="display: none;">클릭시 내용</div>
-								<div class="listrow_ej">
-									<span class="listcell1_ej">번호</span> <span class="listcell2_ej">유형</span>
-									<span class="listcell3_ej">제목</span>
-								</div>
-								<div style="display: none;">클릭시 내용</div>
-								<div class="listrow_ej">
-									<span class="listcell1_ej">번호</span> <span class="listcell2_ej">유형</span>
-									<span class="listcell3_ej">제목</span>
-								</div>
-								<div style="display: none;">클릭시 내용</div>
-								<div class="listrow_ej">
-									<span class="listcell1_ej">번호</span> <span class="listcell2_ej">유형</span>
-									<span class="listcell3_ej">제목</span>
-								</div>
-								<div style="display: none;">클릭시 내용</div>
-								<div class="listrow_ej">
-									<span class="listcell1_ej">번호</span> <span class="listcell2_ej">유형</span>
-									<span class="listcell3_ej">제목</span>
-								</div>
-								<div style="display: none;">클릭시 내용</div>
-								<div class="listrow_ej">
-									<span class="listcell1_ej">번호</span> <span class="listcell2_ej">유형</span>
-									<span class="listcell3_ej">제목</span>
-								</div>
-								<div style="display: none;">클릭시 내용</div>
-								<div class="listrow_ej">
-									<span class="listcell1_ej">번호</span> <span class="listcell2_ej">유형</span>
-									<span class="listcell3_ej">제목</span>
-								</div>
-								<div style="display: none;">클릭시 내용</div>
-								<div class="listrow_ej">
-									<span class="listcell1_ej">번호</span> <span class="listcell2_ej">유형</span>
-									<span class="listcell3_ej">제목</span>
-								</div>
 
-							</div>
-							<div class="page_ej">< 페이지 ></div>
+						<div class=FAQ_TOP_2_ej>
+							<h2 class="h2_hr_ej">FAQ TOP 10</h2>
+							<c:forEach var="i" begin="1" end="10">
+								<div class="jlist_ej mainlist_ej">
+									<div class="number${i}_ej">
+										<span>주문하면 언제 받을 수 있나요?</span>
+									</div>
+								</div>
+							</c:forEach>
 						</div>
 					</div>
 				</div>

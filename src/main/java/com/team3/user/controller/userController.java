@@ -215,4 +215,13 @@ public class userController {
 		
 		return mav;
 	}
+	@RequestMapping(value="/zipcode.do", method=RequestMethod.GET)
+	public ModelAndView zipcode(HttpServletRequest request,HttpServletResponse response) {
+		ModelAndView mav=new ModelAndView();
+		mav.addObject("request", request);
+		service.zipcode(mav);
+		
+		return mav;
+	}
+	
 }

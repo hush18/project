@@ -81,7 +81,7 @@
 				</div>
 
 				<div>
-					<input type="text" name="address_second">
+					<input type="text" name="address_second" style="width: 160px;">
 				</div>
 
 			</div>

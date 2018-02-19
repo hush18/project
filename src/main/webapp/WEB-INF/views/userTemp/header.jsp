@@ -186,16 +186,16 @@
 						<div>
 							<h3 class="h2-hr">참고서</h3>
 							<p>
-								<a href="#">한국소설</a>
+								<a href="#">초중고</a>
 							</p>
 							<p>
-								<a href="#">일본소설</a>
+								<a href="#">외국어</a>
 							</p>
 							<p>
-								<a href="#">영미소설</a>
+								<a href="#">사전</a>
 							</p>
 							<p>
-								<a href="#">기타 외국소설</a>
+								<a href="#">기타</a>
 							</p>
 						</div>
 						<div>
